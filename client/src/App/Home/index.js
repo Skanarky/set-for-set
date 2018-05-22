@@ -49,7 +49,8 @@ class Home extends React.Component {
             scoreOne.bestScore < scoreTwo.bestScore).map((player, i) =>
                 <li
                     key={player._id + i} className="one-score">
-                    <p className="player">{player.name} </p>
+                    <p className="player">
+                        {player.name} {player.avatar.length === 0 ? "" : <img className="smallAvatar" src={player.avatar} alt="Player Avatar" />}</p>
                     <p className="best-score"> Sets: <span>{player.bestScore}</span></p>
                 </li>
             );

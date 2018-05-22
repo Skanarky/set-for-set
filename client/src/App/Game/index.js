@@ -211,6 +211,7 @@ class Game extends Component {
                 <div className="game-layout">
                     {hideDeck ?
                         <div className="cards-layout">
+                            <p>No cheating :)</p>
                             <p>Click 'RESUME' to continue playing.</p>
                         </div>
                         :
@@ -228,13 +229,13 @@ class Game extends Component {
                             <p className="sets-title"> SETS</p>
                             <SetsCounter collectedSets={collectedSets} className="collected-sets" />
                         </div>
-                            <Timer gameOn={gameOn}
+                        <Timer gameOn={gameOn}
                             hideDeck={hideDeck}
                             cardsAvailable={fullDeck.length - (currentCardIndex + 1)}
-                             addCards={this.addCards}
-                                changeBestScoreUser={this.changeBestScoreUser}
-                                endGame={this.endGame}
-                                showDeckAfterPause={this.showDeckAfterPause} pauseAndHideDeck={this.pauseAndHideDeck} dealingCards={this.dealingCards} className="timer" placeholder="00:00"></Timer>
+                            addCards={this.addCards}
+                            changeBestScoreUser={this.changeBestScoreUser}
+                            endGame={this.endGame}
+                            showDeckAfterPause={this.showDeckAfterPause} pauseAndHideDeck={this.pauseAndHideDeck} dealingCards={this.dealingCards} className="timer" placeholder="00:00"></Timer>
                     </div>
                 </div>
             </div>

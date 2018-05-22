@@ -82,6 +82,11 @@
     line-height: 20px;
 }
 
+.smallAvatar {
+    max-width: 50px;
+    padding-bottom: 3px;
+}
+
 @media only screen and (min-width: 1200px) {
     .scores-container {
         padding-left: 200px;
@@ -89,5 +94,9 @@
     }
     .userName {
         padding: 0px;
+    }
+    .smallAvatar {
+        max-width: 100px;
+        padding-bottom: 15px;
     }
 }

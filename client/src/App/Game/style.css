@@ -21,6 +21,13 @@
     width: 95%;
 }
 
+button {
+    box-shadow: 0px 5px 8px 3px rgba(205, 84, 84, 0.85);
+}
+button:hover {
+    box-shadow: 0px 1px 4px 1px rgba(205, 84, 84, 0.85);
+}
+
 .card {
     background-position: center;
     background-size: cover;

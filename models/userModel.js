@@ -23,7 +23,6 @@ const userSchema = new Schema({
     },
     avatar: {
         type: String
-
     },
     isAdmin: {
         type: Boolean,
