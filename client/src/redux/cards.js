@@ -2,7 +2,7 @@ import axios from "axios";
 
 const cardsAxios = axios.create();
 
-const setForSet = "/api/setCards/";
+const setForSet = "/api/cards/";
 
 cardsAxios.interceptors.request.use(config => {
     const token = localStorage.getItem("token");
@@ -14,13 +14,7 @@ cardsAxios.interceptors.request.use(config => {
 const initialState = {
     loading: true,
     errMsg: "",
-    // currentIndex: 0,
-    data: [],
-    // image: "",
-    // color: "",
-    // filling: "",
-    // shape: "",
-    // number: ""
+    data: []
 }
 
 const cardsReducer = (state = initialState, action) => {
