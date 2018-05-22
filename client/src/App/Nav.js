@@ -13,7 +13,7 @@ function Nav(props) {
 
                 {isAuthenticated ? "" : <div className="nav-link"><Link to="/signup">Sign Up</Link></div>}
 
-                {isAuthenticated ? "" : <div className="nav-link"><Link to="/login">Log In</Link></div>}
+                {isAuthenticated ? "" : <div className="nav-link"><Link to="/login">Login</Link></div>}
 
 
                 {isAuthenticated ? <div className="nav-link"><Link to="/home">Home</Link></div> : ""}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -26,9 +27,9 @@ function Landing() {
                 </p>
 
                 <div className="landing-butt-container">
-                    <button className="landing-login-butt">Login</button>
+                    <Link className="landing-login-butt" to="/login">Login</Link>
 
-                    <button className="landing-signup-butt">Sign Up</button>
+                    <Link className="landing-login-butt" to="/signup">Sign Up</Link>
                 </div>
 
             </div>

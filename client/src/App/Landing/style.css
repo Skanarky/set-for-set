@@ -32,7 +32,7 @@
         font-size: 3.5vw;
     }
     .landing-rules-info {
-        text-align: center;
+        text-align: left;
         font-weight: 600;
         font-size: 3.5vw;
     }
@@ -57,21 +57,23 @@
         justify-content: center;
         align-items: center;
     }
-    .landing-login-butt,
-    .landing-signup-butt {
+    .landing-login-butt {
+        box-shadow: 0px 5px 8px 3px rgba(205, 84, 84, 0.85);
         cursor: pointer;
         text-align: center;
         padding: 5px;
-        padding-left: 8px;
-        padding-right: 8px;
+        margin: 5px;
+        border: 2px solid black;
         border-radius: 10px;
         font-size: 4vw;
+        color: black;
     }
     .landing-login-butt {
-        margin-right: 3vw;
+
     }
-    .landing-signup-butt {
-        margin-left: 3vw;
+    .landing-login-butt:hover {
+        box-shadow: 0px 1px 4px 1px rgba(205, 84, 84, 0.85);
+        font-size: 3.9vw;
     }
 
 /* Extra Small Devices, Phones */
@@ -109,20 +111,6 @@
         padding-top: 15px;
         font-weight: 700;
         font-size: 5vw;
-    }
-    .landing-login-butt,
-    .landing-signup-butt {
-        padding: 5px;
-        padding-left: 8px;
-        padding-right: 8px;
-        border-radius: 10px;
-        font-size: 4vw;
-    }
-    .landing-login-butt {
-        margin-right: 3vw;
-    }
-    .landing-signup-butt {
-        margin-left: 3vw;
     }
 }
 
@@ -164,20 +152,6 @@
         font-weight: 700;
         font-size: 5vw;
     }
-    .landing-login-butt,
-    .landing-signup-butt {
-        padding: 5px;
-        padding-left: 8px;
-        padding-right: 8px;
-        border-radius: 10px;
-        font-size: 4.5vw;
-    }
-    .landing-login-butt {
-        margin-right: 3vw;
-    }
-    .landing-signup-butt {
-        margin-left: 3vw;
-    }
 }
 
 /* Medium Devices, Desktops */
@@ -217,20 +191,6 @@
         padding-bottom: 25px;
         font-weight: 700;
         font-size: 5vw;
-    }
-    .landing-login-butt,
-    .landing-signup-butt {
-        padding: 5px;
-        padding-left: 8px;
-        padding-right: 8px;
-        border-radius: 10px;
-        font-size: 4.5vw;
-    }
-    .landing-login-butt {
-        margin-right: 3vw;
-    }
-    .landing-signup-butt {
-        margin-left: 3vw;
     }
 }
 
@@ -272,20 +232,6 @@
         font-weight: 700;
         font-size: 5vw;
     }
-    .landing-login-butt,
-    .landing-signup-butt {
-        padding: 5px;
-        padding-left: 8px;
-        padding-right: 8px;
-        border-radius: 10px;
-        font-size: 3.5vw;
-    }
-    .landing-login-butt {
-        margin-right: 3vw;
-    }
-    .landing-signup-butt {
-        margin-left: 3vw;
-    }
 }
 
 /* Large Devices, Wide Screens */
@@ -326,19 +272,8 @@
         font-weight: 700;
         font-size: 3.5vw;
     }
-    .landing-login-butt,
-    .landing-signup-butt {
-        padding: 5px;
-        padding-left: 8px;
-        padding-right: 8px;
-        border-radius: 10px;
-        font-size: 3vw;
-    }
     .landing-login-butt {
-        margin-right: 3vw;
-    }
-    .landing-signup-butt {
-        margin-left: 3vw;
+        margin: 10px;
     }
 }
 
