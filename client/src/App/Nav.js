@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logout } from "../redux/auth";
 
-
-
 function Nav(props) {
     const isAuthenticated = props.isAuthenticated;
     return (

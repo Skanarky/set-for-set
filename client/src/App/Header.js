@@ -1,12 +1,9 @@
 import React from "react";
 
-function Header(props) {
+function Header() {
     return (
         <div className="header-wrapper">
             <img className="header-title" src="https://i.imgur.com/RzQneYD.png" alt="title"/>
-            {/* <div className="header-container">
-                {/* <div className="header-text"></div> */}
-            {/* </div> */}
         </div>
     )
 }

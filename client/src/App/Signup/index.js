@@ -4,7 +4,7 @@ import SignupForm from "./SignupForm";
 import { connect } from "react-redux";
 import { signup } from "../../redux/auth";
 
-import "./style.css";
+// import "./style.css";
 
 class Signup extends Component {
     constructor() {

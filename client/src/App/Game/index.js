@@ -8,10 +8,6 @@ import SetsCounter from "./SetsCounter";
 import Timer from "./Timer";
 import CardDisplay from "./CardDisplay.js";
 
-// import { attributes } from "./../../helpers/cardCreater.js";
-// import { allDifferent, allTheSame } from "./../../helpers/allSameAllDiff.js";
-// import { Combinator } from "./../../helpers/combinator.js";
-
 class Game extends Component {
     constructor(props) {
         super(props);
