@@ -211,7 +211,7 @@ class Game extends Component {
                 <div className="game-layout">
                     {hideDeck ?
                         <div className="cards-layout">
-                            <p>No cheating :)</p>
+                            <p>No cheating :) </p>
                             <p>Click 'RESUME' to continue playing.</p>
                         </div>
                         :
