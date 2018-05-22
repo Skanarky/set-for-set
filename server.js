@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, "client", "build")));
 app.use("/api", expressJwt({ secret: process.env.SECRET }));
 
 app.use("/api/users", userRouter);
-app.use("/api/setCards", cardRouter);
+app.use("/api/cards", cardRouter);
 app.use("/api/scores", scoresRouter);
 
 app.use("/auth", authRouter);
