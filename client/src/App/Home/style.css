@@ -19,6 +19,7 @@
 
 .userName {
     text-decoration: underline;
+    text-transform: capitalize;
     color: #9A5EB2;
     font-family: "Arcade";
     font-size: 10vw;
