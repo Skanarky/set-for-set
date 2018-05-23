@@ -50,7 +50,7 @@ class Home extends React.Component {
                 <li
                     key={player._id + i} className="one-score">
                     <p className="player">
-                        {player.name} {player.avatar.length === 0 ? "" : <img className="smallAvatar" src={player.avatar} alt="Player Avatar" />}</p>
+                        {player.name} {!player.avatar ? "" : <img className="smallAvatar" src={player.avatar} alt="Player Avatar" />}</p>
                     <p className="best-score"> Sets: <span>{player.bestScore}</span></p>
                 </li>
             );
