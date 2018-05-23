@@ -9,7 +9,6 @@ export default class SetsCounter extends Component {
             collectedSets: props.collectedSets
         }
         this.newGameClick = this.newGameClick.bind(this);
-        // this.addSet = this.addSet.bind(this);
     }
 
     newGameClick() {

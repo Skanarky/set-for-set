@@ -18,7 +18,7 @@ const port = process.env.PORT;
 const db = process.env.MONGODB_URI;
 
 //middleware
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 app.use(logger);
 app.use(express.static(path.join(__dirname, "client", "build")));
 

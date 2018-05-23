@@ -4,8 +4,8 @@ import "./style.css";
 import { getCards } from "../../redux/cards";
 import { editUser } from "../../redux/auth.js";
 import shuffler from "../../helpers/shuffler.js";
-import SetsCounter from "./SetsCounter";
-import Timer from "./Timer";
+import SetsCounter from "./SetsCounter.js";
+import Timer from "./Timer.js";
 import CardDisplay from "./CardDisplay.js";
 
 class Game extends Component {

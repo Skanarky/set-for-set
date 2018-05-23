@@ -79,6 +79,7 @@ export const getCards = () => {
     }
 }
 
+// !!! the back-end is set to receive all 81 cards as an array!!!
 export const newCard = (card) => {
     return dispatch => {
         cardsAxios.post(setForSet, {...card})

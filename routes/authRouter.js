@@ -34,5 +34,4 @@ authRouter.post("/login", (req, res) => {
     });
 });
 
-
 module.exports = authRouter;

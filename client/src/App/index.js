@@ -8,16 +8,16 @@ import "./style.css";
 
 import Header from "./Header.js";
 import Nav from "./Nav.js";
-import Landing from "./Landing";
-import Signup from "./Signup";
-import Login from "./Login";
-import Rules from "./Rules"
-import Home from "./Home";
-import Game from "./Game";
+import Landing from "./Landing/";
+import Signup from "./Signup/";
+import Login from "./Login/";
+import Rules from "./Rules/"
+import Home from "./Home/";
+import Game from "./Game/";
 import Footer from "./Footer.js";
-import Profile from "./Profile";
+import Profile from "./Profile/";
 
-import ProtectedRoute from "./ProtectedRoute";
+import ProtectedRoute from "./ProtectedRoute.js";
 
 class App extends Component {
     componentDidMount() {

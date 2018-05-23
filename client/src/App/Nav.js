@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { connect } from "react-redux";
-import { logout } from "../redux/auth";
+import { logout } from "../redux/auth.js";
 
 function Nav(props) {
     const isAuthenticated = props.isAuthenticated;

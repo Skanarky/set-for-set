@@ -3,26 +3,21 @@ const { Schema } = mongoose;
 
 const cardSchema = new Schema({
     image: {
-        type: String,
-        // required: true
+        type: String
     },
     color: {
-        type: String,
-        // required: true
+        type: String
     },
     filling: {
-        type: String,
-        // required: true
+        type: String
     },
     shape: {
-        type: String,
-        // required: true
+        type: String
     },
     number: {
-        type: Number,
-        // required: true
+        type: Number
     }
-})
+});
 
 const CardModel = mongoose.model("cards", cardSchema);
 module.exports = CardModel;

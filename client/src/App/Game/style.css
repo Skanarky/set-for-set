@@ -122,7 +122,6 @@ button:hover {
 }
 
 .checkSet {
-    /* padding: 3px; */
     border-radius: 10%;
     font-size: 0.8em;
 }
@@ -199,9 +198,6 @@ button:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* margin-top: 1vh;
-        margin-bottom: 1vh;
-        width: auto; */
     }
     .sets-container {
         display: flex;

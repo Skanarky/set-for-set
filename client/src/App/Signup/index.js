@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import SignupForm from "./SignupForm";
+import SignupForm from "./SignupForm.js";
 
 import { connect } from "react-redux";
-import { signup } from "../../redux/auth";
-
-// import "./style.css";
+import { signup } from "../../redux/auth.js";
 
 class Signup extends Component {
     constructor() {

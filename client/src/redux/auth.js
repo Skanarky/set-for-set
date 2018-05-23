@@ -116,26 +116,6 @@ export const editUser = (id, editedUser) => {
     }
 }
 
-// export const editUserPass = (id, editedUser) => {
-//     return dispatch => {
-//         // if(!editedUser.password) delete editedUser.password;
-//         userAxios.post(`/api/users/change-password`, editedUser)
-//             .then(response => {
-//                 dispatch({
-//                     type: "EDIT_PASS",
-//                     id,
-//                     editedUser: response.data
-//                 })
-//             })
-//             .catch(err => {
-//                 dispatch({
-//                     type: "ERR_MSG",
-//                     errMsg: "Sorry, data is unavailable."
-//                 });
-//             })
-//     }
-// }
-
 export function signup(userInfo) {
     return dispatch => {
         axios.post("/auth/signup", userInfo)
