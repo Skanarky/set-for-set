@@ -13,6 +13,7 @@ userRouter.route("/verify")
             })
     })
 
+    
 userRouter.route("/edit-profile")
     .put((req, res) => {
         UserModel.findOne({ email: req.body.email, _id: { $ne: req.user._id } }, (err, existingUser) => {
