@@ -46,7 +46,7 @@ class Home extends React.Component {
         const { isAuthenticated } = this.props;
         const { scores, errMsg, loading } = this.state;
         const presentScores = scores.sort((scoreOne, scoreTwo) =>
-            scoreOne.bestScore < scoreTwo.bestScore).map((player, i) =>
+            scoreTwo.bestScore - scoreOne.bestScore).map((player, i) =>
                 <li
                     key={player._id + i} className="one-score">
                     <p className="player">
