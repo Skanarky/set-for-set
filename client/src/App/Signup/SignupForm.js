@@ -22,7 +22,7 @@ function SignupForm(props) {
                     value={props.password}
                     name="password"
                     type="password"
-                    placeholder="Password" />
+                    placeholder="Password (min. 6 char.)" />
 
                 <button className="login-butt" disabled={!props.name || !props.email || props.password.length < 6} type="submit">Create Account</button>
 
