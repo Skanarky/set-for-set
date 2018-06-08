@@ -10,10 +10,10 @@ function ProfilePassEdit(props) {
                     value={props.passEdit}
                     name="password"
                     type="password"
-                    placeholder="Change Password" />
+                    placeholder="Change Password (min. 6 char.)" />
 
                 <button className="signup-butt" onClick={props.toggleIsEditing}>Back to Profile</button>
-                <button className="signup-butt" type="submit">Save New Password</button>
+                <button className="signup-butt" disabled={props.passEdit.length < 6} type="submit">Save New Password</button>
 
                 {props.errMsg && <p>{props.errMsg}</p>}
 
