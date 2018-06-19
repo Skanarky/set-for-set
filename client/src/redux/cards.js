@@ -6,7 +6,7 @@ const setForSet = "/api/cards/";
 
 cardsAxios.interceptors.request.use(config => {
     const token = localStorage.getItem("token");
-    console.log(token);
+    // console.log(token);
     config.headers.Authorization = `Bearer ${token}`;
     return config;
 })
