@@ -35,9 +35,10 @@ button:hover {
     cursor: pointer;
     border: 4px solid black;
     border-radius: 12px;
-    margin: auto;
     height: 28vw;
     width: 20vw;
+    margin: auto;
+    margin-bottom: 7px;
 }
 
 .selected {
@@ -137,7 +138,6 @@ button:hover {
     .card {
         height: 23vw;
         width: 16.8vw;
-        margin-top: 10px;
         margin-bottom: 10px;
     }
     .sets-container {
@@ -189,9 +189,7 @@ button:hover {
     .card {
         height: 22vw;
         width: 15.5vw;
-        margin: .5vw;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
+        margin-bottom: 5px;
     }
     .stats {
         display: flex;
@@ -252,11 +250,12 @@ button:hover {
 
 @media only screen and (min-width: 1200px) {
     .cards-layout {
-        width: 50%;
+        width: 45%;
     }
     .card {
         height: 15vw;
         width: 10vw;
+        margin-bottom: 9px;
     }
     .sets-container {
         display: flex;
@@ -317,6 +316,9 @@ button:hover {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    .card {
+        margin-bottom: 11px;
+    }
     .sets-container {
         display: flex;
         flex-direction: column;
@@ -355,6 +357,12 @@ button:hover {
 }
 
 @media only screen and (min-width: 2000px) {
+    .cards-layout {
+        width: 43%;
+    }
+    .card {
+        margin-bottom: 12px;
+    }
     .message-for-set{
         font-size: 6vw;
         width: 500px;
