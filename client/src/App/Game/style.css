@@ -250,12 +250,11 @@ button:hover {
 
 @media only screen and (min-width: 1200px) {
     .cards-layout {
-        width: 45%;
+        width: 43%;
     }
     .card {
         height: 15vw;
         width: 10vw;
-        margin-bottom: 9px;
     }
     .sets-container {
         display: flex;
@@ -357,9 +356,6 @@ button:hover {
 }
 
 @media only screen and (min-width: 2000px) {
-    .cards-layout {
-        width: 43%;
-    }
     .card {
         margin-bottom: 12px;
     }
