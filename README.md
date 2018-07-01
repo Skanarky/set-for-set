@@ -1,4 +1,5 @@
 # Set-for-Set
+[View deployed version here](http://set-kutkurov-ellis-thomas.herokuapp.com/)
 
 ## Table of Contents
 
