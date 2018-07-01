@@ -18,11 +18,11 @@
 
 ## Description
 
-Full stack project.
+Full stack team project.
 
-It is associated with the 'Full-stack Group Project' project from our time at V School.
+Single page application (SPA) with user authentication - rendition of the ​card game [card game Set](https://en.wikipedia.org/wiki/Set_(card_game))
 
-The requirements for the assignment can be found at [Full-stack Group Project](https://coursework.vschool.io/full-stack-group-project/)
+
 
 
 
