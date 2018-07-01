@@ -5,7 +5,7 @@
 - [Description](#description)
 - [Main Technologies and Libraries](#technologies-used)
 - [About](#about)
-- [How to Use 'Rock the Vote' App](#how-to-use)
+- [How to Use 'Set-for-Set' App](#how-to-use)
 
 
 
