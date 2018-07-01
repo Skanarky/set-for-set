@@ -22,6 +22,11 @@ Full stack team project.
 
 Single page application (SPA) with user authentication - rendition of the ​card game [card game Set](https://en.wikipedia.org/wiki/Set_(card_game))
 
+JWTs were used for token-based authentication system to authenticate users.
+
+Password hashing included - no un-encoded password strings are saved in the database.
+
+JWT are saved in web storage and set up to send automatically with every request.
 
 
 
