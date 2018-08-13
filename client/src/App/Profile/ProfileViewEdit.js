@@ -2,6 +2,16 @@ import React from "react";
 import { connect } from "react-redux";
 
 function ProfileViewEdit(props) {
+    if (props.msgSuccess) {
+        setTimeout(props.toggleIsEditing, 2000);
+        return (
+            <div className="signup-form-wrapper">
+                <form className="signup-form-container">
+                    <h3 className="signup-head">{props.msgSuccess}</h3>
+                </form>
+            </div>
+        )
+    };
     return (
         <div className="signup-form-wrapper">
             <form className="signup-form-container" onSubmit={props.handleSubmit}>

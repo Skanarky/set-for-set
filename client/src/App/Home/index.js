@@ -69,7 +69,7 @@ class Home extends React.Component {
             return (
                 <div className="profile-wrapper">
                     <div className="welcome">
-                        <h2 className="hello">Hello, {isAuthenticated ? <Link className="userName" to="/profile">{this.props.name}</Link> : ""}</h2>
+                        <h2>Hello, {isAuthenticated ? <Link className="userName" to="/profile">{this.props.name}</Link> : ""}</h2>
                     </div>
                     <div className="scores-wrapper" >
                         <div className="scores-container">

@@ -22,12 +22,12 @@
     text-transform: capitalize;
     color: #9A5EB2;
     font-family: "Arcade";
-    font-size: 10vw;
+    font-size: 8vw;
     font-style: italic;
 }
 
 .userName:hover {
-    color: blue;
+    color: hsl(283, 32%, 43%);
 }
 
 .scores-wrapper {

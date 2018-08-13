@@ -28,7 +28,7 @@ class Profile extends Component {
             isEditing: false,
             isEditingPass: false,
             errMsgPass: "",
-            msgPass: "",
+            msgSuccess: "",
             loading: false
         }
     }
@@ -66,10 +66,10 @@ class Profile extends Component {
             return {
                 ...prevState,
                 inputs: {
-                    name: this.props.name,
-                    email: this.props.email,
-                    password: "",
-                    avatar: this.props.avatar
+                    // name: this.props.name,
+                    // email: this.props.email,
+                    // password: "",
+                    // avatar: this.props.avatar
                 }
             }
         })
@@ -79,6 +79,13 @@ class Profile extends Component {
         // e.preventDefault();
         this.props.editUser(this.props._id, this.state.inputs);
         this.clearInputs();
+        this.setState(prevState => {
+            return {
+                ...prevState,
+                loading: false,
+                msgSuccess: "Profile Updated Successfully"
+            }
+        });
         // this.toggleIsEditing();
     }
     handleSubmitPass = (e) => {
@@ -95,9 +102,9 @@ class Profile extends Component {
                     return {
                         ...prevState,
                         loading: false,
-                        msgPass: "Password Changed Successfully"
+                        msgSuccess: "Password Changed Successfully"
                     }
-                })
+                });
             })
             // .catch(err => { });
             .catch(err => {
@@ -119,7 +126,7 @@ class Profile extends Component {
     }
 
     render() {
-        const { isEditing, isEditingPass, errMsgPass, loading, msgPass } = this.state;
+        const { isEditing, isEditingPass, errMsgPass, loading, msgSuccess } = this.state;
         const authErrorCode = this.props.authErrCode;
         let errMsg = '';
         if (authErrorCode < 500 && authErrorCode > 399) {
@@ -135,6 +142,7 @@ class Profile extends Component {
                         handleChange={this.handleChange}
                         handleSubmit={this.handleSubmit}
                         errMsg={errMsg}
+                        msgSuccess={msgSuccess}
                         toggleIsEditing={this.toggleIsEditing}
                         handleDeleteUser={this.handleDeleteUser}
                         {...this.state} />
@@ -148,7 +156,7 @@ class Profile extends Component {
                         handleSubmitPass={this.handleSubmitPass}
                         loading={loading}
                         errMsgPass={errMsgPass}
-                        msgPass={msgPass}
+                        msgSuccess={msgSuccess}
                         toggleIsEditingPass={this.toggleIsEditingPass}
                         passEdit={this.state.inputs.password} />
                 </div>

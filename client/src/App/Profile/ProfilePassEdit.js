@@ -4,12 +4,12 @@ import { connect } from "react-redux";
 function ProfilePassEdit(props) {
     if (props.loading) return <h1>... Loading!</h1>;
     if (props.errMsgPass) return <p>Sorry, password can not be changed now!</p>;
-    if (props.msgPass) {
-        setTimeout(props.toggleIsEditingPass, 2000);
+    if (props.msgSuccess) {
+        // setTimeout(props.toggleIsEditingPass, 2000);
         return (
             <div className="signup-form-wrapper">
-                <form className="signup-form-container" onSubmit={props.handleSubmitPass}>
-                    <h3 className="signup-head">{props.msgPass}</h3>
+                <form className="signup-form-container">
+                    <h3 className="signup-head">{props.msgSuccess}</h3>
                 </form>
             </div>
         )
