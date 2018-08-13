@@ -222,7 +222,7 @@ class Game extends Component {
 
                     <div className="stats">
                         <div className="message-for-set">
-                            {!messageForSet && gameOn ? <p className="checkSet">Cards left: {fullDeck.length - (currentCardIndex + 1)}</p>
+                            {!messageForSet && gameOn ? <p className="checkSet">Cards left: {(fullDeck.length - (currentCardIndex + 1)) < 0 ? 0 : (fullDeck.length - (currentCardIndex + 1))}</p>
                                 : <p style={{ backgroundColor: "yellow" }} className="checkSet">{gameMessage}</p>}
                         </div>
                         <div className="sets-container">
