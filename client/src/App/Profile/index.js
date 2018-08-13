@@ -28,6 +28,7 @@ class Profile extends Component {
             isEditing: false,
             isEditingPass: false,
             errMsgPass: "",
+            msgPass: "",
             loading: false
         }
     }
@@ -81,7 +82,7 @@ class Profile extends Component {
         // this.toggleIsEditing();
     }
     handleSubmitPass = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         this.setState(prevState => {
             return {
                 ...prevState,
@@ -93,7 +94,8 @@ class Profile extends Component {
                 this.setState(prevState => {
                     return {
                         ...prevState,
-                        loading: false
+                        loading: false,
+                        msgPass: "Password Changed Successfully"
                     }
                 })
             })
@@ -117,7 +119,7 @@ class Profile extends Component {
     }
 
     render() {
-        const { isEditing, isEditingPass, errMsgPass, loading } = this.state;
+        const { isEditing, isEditingPass, errMsgPass, loading, msgPass } = this.state;
         const authErrorCode = this.props.authErrCode;
         let errMsg = '';
         if (authErrorCode < 500 && authErrorCode > 399) {
@@ -139,15 +141,15 @@ class Profile extends Component {
                 </div>
             )
         } else if (isEditingPass) {
-            if (loading) return <h1>... Loading!</h1>
-            if (errMsgPass) return <p>Sorry, password can not be changed now!</p>
             return (
                 <div className="signup-form-wrapper">
                     <ProfilePassEdit
                         handleChange={this.handleChange}
-                        handleSubmit={this.handleSubmitPass}
-                        errMsg={errMsg}
-                        toggleIsEditing={this.toggleIsEditingPass}
+                        handleSubmitPass={this.handleSubmitPass}
+                        loading={loading}
+                        errMsgPass={errMsgPass}
+                        msgPass={msgPass}
+                        toggleIsEditingPass={this.toggleIsEditingPass}
                         passEdit={this.state.inputs.password} />
                 </div>
             )
@@ -162,7 +164,7 @@ class Profile extends Component {
                         <h4 className="signup-form-input">Best Score: {this.props.bestScore}</h4>
                         <div className="buttProfile">
                             <button className="signup-butt" onClick={this.toggleIsEditing}>Edit Profile</button>
-                            <button className="signup-butt" onClick={this.toggleIsEditingPass}>Change Password</button>
+                            <button className="signup-butt" onClick={this.toggleIsEditingPass}>{"Edit Pass-\nword"}</button>
                         </div>
                     </div>
                 </div>

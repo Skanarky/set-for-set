@@ -2,23 +2,36 @@ import React from "react";
 import { connect } from "react-redux";
 
 function ProfilePassEdit(props) {
+    if (props.loading) return <h1>... Loading!</h1>;
+    if (props.errMsgPass) return <p>Sorry, password can not be changed now!</p>;
+    if (props.msgPass) {
+        setTimeout(props.toggleIsEditingPass, 2000);
+        return (
+            <div className="signup-form-wrapper">
+                <form className="signup-form-container" onSubmit={props.handleSubmitPass}>
+                    <h3 className="signup-head">{props.msgPass}</h3>
+                </form>
+            </div>
+        )
+    };
     return (
         <div className="signup-form-wrapper">
-            <form className="signup-form-container" onSubmit={props.handleSubmit}>
-                <h3 className="signup-head">Profile</h3>
+            <form className="signup-form-container" onSubmit={props.handleSubmitPass}>
+                <h3 className="signup-head">Edit Password</h3>
                 <input className="signup-form-input" onChange={props.handleChange}
                     value={props.passEdit}
                     name="password"
                     type="password"
-                    placeholder="Change Password (min. 6 char.)" />
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?=.*\D).{6,}"
+                    title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 6 or more characters"
+                    placeholder="Min. 6 Characters" />
 
                 <button className="signup-butt" onClick={props.toggleIsEditing}>Back to Profile</button>
-                <button className="signup-butt" disabled={props.passEdit.length < 6} type="submit">Save New Password</button>
+                <button className="signup-butt" disabled={!props.passEdit} type="submit">Save New Password</button>
 
                 {props.errMsg && <p>{props.errMsg}</p>}
 
             </form>
-
         </div>
     )
 }
