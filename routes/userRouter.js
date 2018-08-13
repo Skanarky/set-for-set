@@ -16,7 +16,7 @@ userRouter.route("/verify")
     
 userRouter.route("/edit-profile")
     .put((req, res) => {
-        console.log(req.body);
+        // console.log(req.body);
         if (req.body.email) {
             UserModel.findOne({ email: req.body.email, _id: { $ne: req.user._id } }, (err, existingUser) => {
                 if (err) return res.status(500).send({ success: false, err });

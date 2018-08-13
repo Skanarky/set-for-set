@@ -138,7 +138,7 @@ export function login(credentials) {
         axios.post("/auth/login", credentials)
             .then(response => {
                 const { token, user } = response.data
-                console.log(token);
+                // console.log(token);
                 localStorage.setItem("token", token);
                 localStorage.setItem("user", JSON.stringify(user));
                 dispatch(authenticate(user));
