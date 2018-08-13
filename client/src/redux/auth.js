@@ -98,22 +98,40 @@ export function verify() {
 
 export const editUser = (id, editedUser) => {
     return dispatch => {
-        if(!editedUser.password) delete editedUser.password;
-        userAxios.put(`/api/users/edit-profile`, editedUser)
-            .then(response => {
-                dispatch({
-                    type: "EDIT_USER",
-                    id,
-                    editedUser: response.data
+        console.log(editedUser);
+        if (editedUser.password) {
+            delete editedUser.password;
+            userAxios.put(`/api/users/edit-profile`, editedUser)
+                .then(response => {
+                    dispatch({
+                        type: "EDIT_USER",
+                        id,
+                        editedUser: response.data
+                    })
                 })
-            })
-            .catch(err => {
-                dispatch({
-                    type: "ERR_MSG",
-                    errMsg: "Sorry, data is unavailable."
+                .catch(err => {
+                    dispatch({
+                        type: "ERR_MSG",
+                        errMsg: "Sorry, data is unavailable."
+                    });
                 });
-            })
-    }
+        } else {
+            userAxios.put(`/api/users/edit-profile`, editedUser)
+                .then(response => {
+                    dispatch({
+                        type: "EDIT_USER",
+                        id,
+                        editedUser: response.data
+                    })
+                })
+                .catch(err => {
+                    dispatch({
+                        type: "ERR_MSG",
+                        errMsg: "Sorry, data is unavailable."
+                    });
+                });
+        };
+    };
 }
 
 export function signup(userInfo) {
