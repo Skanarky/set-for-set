@@ -161,7 +161,7 @@ class Profile extends Component {
                         <h4 className="signup-form-input">Email: {this.props.email}</h4>
                         <h4 className="signup-form-input">Best Score: {this.props.bestScore}</h4>
                         <div className="buttProfile">
-                            <button className="signup-butt" onClick={this.toggleIsEditing}>Edit Account</button>
+                            <button className="signup-butt" onClick={this.toggleIsEditing}>Edit Profile</button>
                             <button className="signup-butt" onClick={this.toggleIsEditingPass}>Change Password</button>
                         </div>
                     </div>
