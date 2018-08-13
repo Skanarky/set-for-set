@@ -26,7 +26,7 @@ function ProfilePassEdit(props) {
                     title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 6 or more characters"
                     placeholder="Min. 6 Characters" />
 
-                <button className="signup-butt" onClick={props.toggleIsEditing}>Back to Profile</button>
+                <button className="signup-butt" onClick={props.toggleIsEditingPass}>Back to Profile</button>
                 <button className="signup-butt" disabled={!props.passEdit} type="submit">Save New Password</button>
 
                 {props.errMsg && <p>{props.errMsg}</p>}
