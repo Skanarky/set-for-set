@@ -21,8 +21,8 @@ userRouter.route("/edit-profile")
             if (existingUser) res.status(403).send({ message: "A user with that email already exists!" })
             UserModel.findOneAndUpdate({ _id: req.user._id }, req.body, { new: true }, (err, updatedUser) => {
                 if (err) return res.status(500).send(err);
-                console.log(updatedUser);
-                console.log(req.body);
+                // console.log(updatedUser);
+                // console.log(req.body);
                 res.status(200).send({ success: true, user: updatedUser.withoutPassword() });
             })
         })
