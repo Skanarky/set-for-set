@@ -10,13 +10,13 @@ function ProfileViewEdit(props) {
                     value={props.inputs.name}
                     name="name"
                     type="text"
-                    placeholder="Name" />
+                    placeholder="Change Name" />
 
                 <input className="signup-form-input" onChange={props.handleChange}
                     value={props.inputs.email}
                     name="email"
                     type="text"
-                    placeholder="Email" />
+                    placeholder="Change Email" />
                 <input className="signup-form-input" onChange={props.handleChange}
                     value={props.inputs.avatar}
                     name="avatar"

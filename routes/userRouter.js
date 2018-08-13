@@ -16,17 +16,27 @@ userRouter.route("/verify")
     
 userRouter.route("/edit-profile")
     .put((req, res) => {
-        UserModel.findOne({ email: req.body.email, _id: { $ne: req.user._id } }, (err, existingUser) => {
-            if (err) return res.status(500).send({ success: false, err });
-            if (existingUser) res.status(403).send({ message: "A user with that email already exists!" })
+        console.log(req.body);
+        if (req.body.email) {
+            UserModel.findOne({ email: req.body.email, _id: { $ne: req.user._id } }, (err, existingUser) => {
+                if (err) return res.status(500).send({ success: false, err });
+                if (existingUser) res.status(403).send({ message: "A user with that email already exists!" });
+                UserModel.findOneAndUpdate({ _id: req.user._id }, req.body, { new: true }, (err, updatedUser) => {
+                    if (err) return res.status(500).send(err);
+                    // console.log(updatedUser);
+                    // console.log(req.body);
+                    res.status(200).send({ success: true, user: updatedUser.withoutPassword() });
+                });
+            });
+        } else {
             UserModel.findOneAndUpdate({ _id: req.user._id }, req.body, { new: true }, (err, updatedUser) => {
                 if (err) return res.status(500).send(err);
                 // console.log(updatedUser);
                 // console.log(req.body);
                 res.status(200).send({ success: true, user: updatedUser.withoutPassword() });
-            })
-        })
-    })
+            });
+        };
+    });
 
 userRouter.route("/change-password")
     .post((req, res) => {
@@ -38,9 +48,9 @@ userRouter.route("/change-password")
                 user.save(function (err, user) {
                     res.send({ success: true, user: user.withoutPassword() });
                 });
-            }
+            };
         });
-    })
+    });
 
 userRouter.route("/delete-user")
     .delete((req, res) => {
@@ -49,6 +59,6 @@ userRouter.route("/delete-user")
             if (!deletedUser) res.status(404).send({ message: "User not found" })
             res.status(200).send({ message: `User with id: ${req.user._id} was successfully deleted!` });
         });
-    })
+    });
 
 module.exports = userRouter;

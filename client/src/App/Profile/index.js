@@ -20,10 +20,10 @@ class Profile extends Component {
         super(props);
         this.state = {
             inputs: {
-                name: props.name,
-                email: props.email,
-                password: "",
-                avatar: props.avatar
+                // name: props.name,
+                // email: props.email,
+                // password: "",
+                // avatar: props.avatar
             },
             isEditing: false,
             isEditingPass: false,
