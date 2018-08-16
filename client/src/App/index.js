@@ -7,7 +7,7 @@ import { verify } from "../redux/auth";
 import "./style.css";
 
 import Header from "./Header.js";
-import Nav from "./Nav.js";
+// import Nav from "./Nav.js";
 import Landing from "./Landing/";
 import Signup from "./Signup/";
 import Login from "./Login/";
@@ -28,7 +28,7 @@ class App extends Component {
         return (
             <div className="app-wrapper">
                 <Header />
-                <Nav />
+                {/* <Nav /> */}
                 {
                     loading ?
                         <div>...Loading</div>

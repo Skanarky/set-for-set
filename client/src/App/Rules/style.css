@@ -2,24 +2,37 @@
 
 .rules-wrapper {
     grid-area: cnt;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    background: white;
-    padding: 50px;
-    width: 100vw;
-    color: rgb(138, 62, 168);
+    justify-content: center; */
+    /* height: 100%; */
+    /* background: white; */
+    padding-left: 50px;
+    padding-right: 50px;
+    /* padding-top: 100px; */
+    /* width: 100vw; */
+    /* color: rgb(138, 62, 168); */
+    color: white;
+    /* color: rgb(97, 143, 97); */
+
+    /* background: white; */
+    background: url("https://i.imgur.com/LGVMYT6.png");
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-color: rgba(187, 74, 74, 0.699);
+    background-blend-mode: darken;
+    overflow: scroll;
 }
 
 .rules-head {
     font-family: 'Numans', sans-serif;
-    
+    padding-top: 30px;
     /* font-family: "Roboto", sans-serif; */
     font-weight: 900;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
-    font-size: 11vw;
+    font-size: 2.5em;
 }
 
 .rules-subhead {
@@ -28,20 +41,21 @@
     /* font-family: "Roboto", sans-serif; */
     padding: 10px;
     text-align: center;
-    padding-bottom: 70px;
-    font-size: 4.5vw;
+    /* padding-bottom: 70px; */
+    font-size: 1.4em;
 }
 
 .rules-section-head {
     font-weight: 900px;
-    margin-top: 1vw;
-    font-size: 2.8vw;
+    /* margin-top: 1vw; */
+    padding-bottom: 7px;
+    font-size: 1.3em;
 }
 
 .rules-text {
     font-weight: 600;
-    margin-bottom: 3vw;
-    font-size: 2.3vw;
+    padding-bottom: 19px;
+    font-size: 1em;
 }
 
 .example-container {
@@ -50,8 +64,8 @@
 }
 
 .example-sets {
-    margin-bottom: .5vw;
-    height: auto;
+    /* margin-bottom: .5vw; */
+    /* height: auto; */
     width: 70vw;
 }
 
@@ -121,9 +135,14 @@
 } */
 
 /* Large Devices, Wide Screens */
-/* 
+
 @media only screen and (min-width: 1200px) {
-    .rules-wrapper {
+    .example-sets {
+        /* margin-bottom: .5vw; */
+        /* height: auto; */
+        width: 40vw;
+    }
+    /* .rules-wrapper {
         padding: 20px;
         padding-left: 15vw;
         padding-right: 15vw;
@@ -150,8 +169,8 @@
         margin-bottom: 10px;
         width: 45vw;
         height: auto;
-    }
-} */
+    } */
+}
 
 /* Extra-Large Devices & Wide Screens */
 /* 

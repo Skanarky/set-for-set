@@ -2,12 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("https://i.imgur.com/LGVMYT6.png");
+    /* background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
     background-size: cover;
     height: 69.6vh;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     color: white;
+    /* color: rgb(97, 143, 97); */
+
+    grid-area: cnt;
+    /* background: white; */
+    background: url("https://i.imgur.com/LGVMYT6.png");
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-color: rgba(187, 74, 74, 0.699);
+    background-blend-mode: darken;
 }
 
 .login-form-container {
@@ -24,8 +34,8 @@
     color: #004D05;
     /* margin: .7vh;
     margin: 20px;   */
-    padding: 20px;  
-    padding-top: 15px;    
+    padding: 20px;
+    padding-top: 15px;
     font-size: 10vw;
 }
 
@@ -51,7 +61,6 @@
     padding: 10px;
     margin: .2vh;
     font-size: 4vw;
-    
 }
 
 .login-signup {

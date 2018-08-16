@@ -11,68 +11,132 @@
 
 .app-wrapper {
     display: grid;
-    grid-template-areas: "hdr" "nav" "cnt" "cpy" "ftr";
-    grid-template-rows: 2.5fr .5fr 4fr .5fr;
-    background: white;
+    grid-template-areas: "hdr" "cnt" "ftr";
+    grid-template-rows: 10% 83% 7%;
+    /* background: white; */
     height: 100vh;
 }
 
 .header-wrapper {
     grid-area: hdr;
     display: flex;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    /* justify-content: space-evenly; */
     align-items: center;
     background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    min-height: 120px;
+    color: rgb(78, 116, 78);
 }
 
 .header-title {
-    width: 80vw;
+    width: 30%;
+    text-transform: uppercase;
+    font-family: "Arcade";
+    font-size: 4.5em;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* margin-left: 20px; */
 }
 
 nav {
-    grid-area: nav;
+    width: 70%;
     display: flex;
-    justify-content: center;
-    background: #CD5454;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    /* background: #CD5454; */
 }
 
-a {
+.fa {
+    height: 40px;
+    width: 40px;
+    color: rgb(187, 74, 74);
+    border: 2px black solid;
+    border-radius: 50%;
+    background: rgb(78, 116, 78);
+    box-shadow: 0px 0px 0px 3px rgba(82, 81, 81);
+}
+
+.fa:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0.5px 1px rgba(82, 81, 81);
+}
+
+.fa-sign-in {
+    padding: 5px;
+    font-size: 1.8em;
+}
+.fa-sign-out {
+    padding: 4.5px;
+    padding-left: 7px;
+    font-size: 1.8em;
+}
+.fa-play {
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 1.7em;
+}
+.fa-home {
+    padding: 3.7px;
+    padding-left: 4.5px;
+    font-size: 1.8em;
+}
+
+.fa-user-plus {
+    padding: 5px;
+    padding-left: 7px;
+    font-size: 1.45em;
+}
+
+.fa-question {
+    padding: 2px;
+    padding-left: 7.5px;
+    font-size: 2.1em;
+}
+
+
+/* a {
     color: white;
     text-decoration: none;
     font-size: 4vw;
     padding: 10px;
-}
+} */
 
 footer {
     grid-area: ftr;
     display: flex;
     align-content: center;
-    bottom: 0;
+    background: url("https://i.imgur.com/LGVMYT6.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    /* bottom: 0; */
     padding: 1.5vw;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
 }
 
 .footer-wrapper {
     display: flex;
     flex-direction: column;
-    background: #CD5454;
-    color: white;
+    align-items: center;
+    color: rgb(78, 116, 78);
 }
 
 .copyright {
-    padding-top: 5px;
-    font-size: 2vw;
+    padding-left: 5px;
+    padding-top: 2px;
+    font-size: 2.5vw;
 }
 
 .noLine {
     text-decoration: none;
     color: auto;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
 }
 .noLine:hover {
     text-decoration: underline;
@@ -88,7 +152,7 @@ button {
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (min-width: 550px) {
+/* @media only screen and (min-width: 550px) {
     nav {
         padding: 10px;
         font-size: 2.5vw;
@@ -105,11 +169,11 @@ button {
         padding-top: 5px;
         font-size: 1.5vw;
     }
-}
+} */
 
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     a {
         font-size: 3vw;
         padding: 20px;
@@ -123,11 +187,11 @@ button {
         padding-top: 5px;
         font-size: 1.3vw;
     }
-}
+} */
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
     a {
         font-size: 2.7vw;
     }
@@ -151,11 +215,11 @@ button {
         padding-top: 5px;
         font-size: 1.1vw;
     }
-}
+} */
 
 /* Large Devices & Wide Screens */
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     .header-wrapper {
         height: 29.5vh;
     }
@@ -182,11 +246,11 @@ button {
         padding-top: 5px;
         font-size: .9vw;
     }
-}
+} */
 
 /* Extra-Large Devices & Wide Screens */
 
-@media only screen and (min-width: 1500px) {
+/* @media only screen and (min-width: 1500px) {
   
     nav {
         padding: 5px;
@@ -204,4 +268,4 @@ button {
         padding-top: 5px;
         font-size: .7vw;
     }
-}
+} */

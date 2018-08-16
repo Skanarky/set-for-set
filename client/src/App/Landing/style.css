@@ -2,14 +2,20 @@
 
     .landing-wrapper {
         grid-area: cnt;
-        background: white;
-        width: 100vw;
+        /* background: white; */
+        background: url("https://i.imgur.com/LGVMYT6.png");
+        background-position: center;
+        /* background-size: cover; */
+        background-repeat: repeat;
+        background-color: rgba(187, 74, 74, 0.699);
+        background-blend-mode: darken;
+        /* width: 100vw; */
     }
     .landing-rules-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 10px;
+        padding-top: 50px;
         padding-left: 20px;
         padding-right: 20px;
         width: 100vw;

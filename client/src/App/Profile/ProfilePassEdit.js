@@ -23,7 +23,7 @@ function ProfilePassEdit(props) {
                     name="password"
                     type="password"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?=.*\D).{6,}"
-                    title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 6 or more characters"
+                    title="Must contain at least one number, one special character, one uppercase and one lowercase letter, and to be a min. length of 6 characters"
                     placeholder="Min. 6 Characters" />
 
                 <button className="signup-butt" onClick={props.toggleIsEditingPass}>Back to Profile</button>

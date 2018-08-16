@@ -211,20 +211,19 @@ class Game extends Component {
                 <div className="game-layout">
                     {hideDeck ?
                         <div className="cards-layout">
-                            <p>No cheating :) </p>
-                            <p>Click 'RESUME' to continue playing.</p>
+                            <p>We are hiding the deck of cards... because cheating is for cheaters! :) Click 'RESUME' to continue playing.</p>
                         </div>
                         :
                         <div className="cards-layout">
                             {presentGameLayout}
                         </div>
                     }
-
                     <div className="stats">
                         <div className="message-for-set">
-                            {!messageForSet && gameOn ? <p className="checkSet">Cards left: {(fullDeck.length - (currentCardIndex + 1)) < 0 ? 0 : (fullDeck.length - (currentCardIndex + 1))}</p>
-                                : <p style={{ backgroundColor: "yellow" }} className="checkSet">{gameMessage}</p>}
+                            {!gameOn ? "Cards left: 0" : false || (!messageForSet && gameOn ? <p className="checkSet">Cards left: {(fullDeck.length - (currentCardIndex + 1)) < 0 ? 0 : (fullDeck.length - (currentCardIndex + 1))}</p>
+                                : <p style={{ backgroundColor: "yellow", color: "black" }} className="checkSet">{gameMessage}</p>)}
                         </div>
+
                         <div className="sets-container">
                             <p className="sets-title"> SETS</p>
                             <SetsCounter collectedSets={collectedSets} className="collected-sets" />
@@ -235,7 +234,11 @@ class Game extends Component {
                             addCards={this.addCards}
                             changeBestScoreUser={this.changeBestScoreUser}
                             endGame={this.endGame}
-                            showDeckAfterPause={this.showDeckAfterPause} pauseAndHideDeck={this.pauseAndHideDeck} dealingCards={this.dealingCards} className="timer" placeholder="00:00"></Timer>
+                            showDeckAfterPause={this.showDeckAfterPause}
+                            pauseAndHideDeck={this.pauseAndHideDeck}
+                            dealingCards={this.dealingCards}
+                            placeholder="00:00" />
+
                     </div>
                 </div>
             </div>

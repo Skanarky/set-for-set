@@ -2,6 +2,7 @@ import axios from "axios";
 
 const cardsAxios = axios.create();
 
+
 const setForSet = "/api/cards/";
 
 cardsAxios.interceptors.request.use(config => {
@@ -62,14 +63,14 @@ const cardsReducer = (state = initialState, action) => {
 export const getCards = () => {
     return dispatch => {
         cardsAxios.get(`${setForSet}`)
-            .then(response => {
+            .then(response =>
+                // console.log(response.data);
                 dispatch({
                     type: "GET_CARDS",
                     cards: response.data,
                     loading: false
                 })
-                // console.log(response.data);
-            })
+            )
             .catch(err => {
                 dispatch({
                     type: "ERR_MSG",
@@ -82,7 +83,7 @@ export const getCards = () => {
 // !!! the back-end is set to receive all 81 cards as an array!!!
 export const newCard = (card) => {
     return dispatch => {
-        cardsAxios.post(setForSet, {...card})
+        cardsAxios.post(setForSet, { ...card })
             .then(response => {
                 dispatch({
                     type: "NEW_CARD",

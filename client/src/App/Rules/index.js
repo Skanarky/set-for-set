@@ -63,37 +63,38 @@ function Rules() {
             <p className="rules-text">
 
                 For example, the following are SETs: </p>
+            <div>
+                <div className="example-container">
+                    <img className="example-sets" src="https://i.imgur.com/2vSBXe6.png" alt="same: color(red), number(2), and shape(oval); different fill" />
+                </div>
 
-            <div className="example-container">
-                <img className="example-sets" src="https://i.imgur.com/2vSBXe6.png" alt="same: color(red), number(2), and shape(oval); different fill" />
+                <p className="rules-text">
+
+                    All three cards have the same shape, the same color, the same number of symbols and they all have different shading. </p>
+
+                <br />
+
+                <div className="example-container">
+                    <img className="example-sets" src="https://i.imgur.com/ig8P8Oy.png" alt="same: fill(striped); different color, number, and shape" />
+                </div>
+
+                <p className="rules-text">
+
+                    All three cards have different shapes, different colors, and different numbers of symbols and they all have the same shading. </p>
+
+                <br />
+
+                <div className="example-container">
+                    <img className="example-sets" src="https://i.imgur.com/rVSfSZ9.png" alt="different color, number, shape, and fill" />
+                </div>
+
+                <p className="rules-text">
+
+                    All three cards have different shapes, different colors, different numbers of symbols and different shadings. </p>
+
+                <br />
+                <br />
             </div>
-
-            <p className="rules-text">
-
-                All three cards have the same shape, the same color, the same number of symbols and they all have different shading. </p>
-
-            <br />
-
-            <div className="example-container">
-                <img className="example-sets" src="https://i.imgur.com/ig8P8Oy.png" alt="same: fill(striped); different color, number, and shape" />
-            </div>
-
-            <p className="rules-text">
-
-                All three cards have different shapes, different colors, and different numbers of symbols and they all have the same shading. </p>
-
-            <br />
-
-            <div className="example-container">
-                <img className="example-sets" src="https://i.imgur.com/rVSfSZ9.png" alt="different color, number, shape, and fill" />
-            </div>
-
-            <p className="rules-text">
-
-                All three cards have different shapes, different colors, different numbers of symbols and different shadings. </p>
-
-            <br />
-            <br />
 
         </div>
     )

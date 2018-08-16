@@ -1,6 +1,13 @@
 .profile-wrapper {
     padding: 20px;
-    width: 100vw;
+    grid-area: cnt;
+    background: url("https://i.imgur.com/LGVMYT6.png");
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-color: rgba(187, 74, 74, 0.699);
+    background-blend-mode: darken;
+    /* width: 100vw; */
 }
 
 .welcome {
@@ -15,19 +22,22 @@
 
 .welcome h2 {
     font-family: "Arcade";
+    color: rgb(97, 143, 97);
 }
 
 .userName {
     text-decoration: underline;
     text-transform: capitalize;
-    color: #9A5EB2;
+    /* color: #9A5EB2; */
+    color: rgb(107, 156, 107);
     font-family: "Arcade";
     font-size: 8vw;
     font-style: italic;
 }
 
 .userName:hover {
-    color: hsl(283, 32%, 43%);
+    /* color: hsl(283, 32%, 43%); */
+    color: rgb(97, 143, 97);
 }
 
 .scores-wrapper {
@@ -43,7 +53,9 @@
     justify-content: center;
     padding: 30px;
     padding-left: 50px;
-    background: rgb(107, 156, 107);
+    /* background: rgb(107, 156, 107); */
+    /* background: rgba(187, 74, 74); */
+    background: rgba(138, 82, 160, 0.607);
     border-radius: 15px;
     width: 80vw;
 }

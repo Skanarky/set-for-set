@@ -22,7 +22,7 @@ function LoginForm(props) {
                     type="password"
                     placeholder="Password" />
 
-                <button className="login-butt" type="submit">Log In</button>
+                <button className="login-butt" disabled={!props.password} type="submit">Log In</button>
 
                 <p className="no-account">Don't have an account? </p>
 
