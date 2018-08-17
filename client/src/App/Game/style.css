@@ -52,12 +52,6 @@ button:hover {
     margin-bottom: 4px;
 }
 
-.card:hover {
-    border: 10px solid rgb(23, 201, 23);
-    border-radius: 12px;
-    cursor: pointer;
-}
-
 .selected {
     border: 10px solid rgb(23, 201, 23);
     border-radius: 12px;
@@ -349,6 +343,11 @@ button:hover {
     .card {
         height: 15.5vw;
         width: 11vw;
+    }
+    .card:hover {
+        border: 10px solid rgb(23, 201, 23);
+        border-radius: 12px;
+        cursor: pointer;
     }
 }
 

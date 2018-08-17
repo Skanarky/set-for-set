@@ -56,7 +56,11 @@ class Home extends React.Component {
             );
 
         if (loading) {
-            return <h1 style={{ color: "black" }}>... Loading Scores</h1>
+            return (
+                <div className="profile-wrapper">
+                    <h1 style={{ color: "black" }}>... Loading Scores</h1>
+                </div>
+            )
         } else if (errMsg) {
             return <p>Sorry, data is not availble right now.</p>
         } else if (scores.length === 0) {
