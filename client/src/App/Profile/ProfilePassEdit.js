@@ -23,7 +23,7 @@ function ProfilePassEdit(props) {
                     type="password"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?=.*\D).{6,}"
                     title="Must contain at least one number, one special character, one uppercase and one lowercase letter, and to be a min. length of 6 characters"
-                    placeholder="Min. 6 Characters" />
+                    placeholder="Change Password" />
 
                 <button className="login-butt" onClick={props.toggleIsEditingPass}>Back to Profile</button>
                 <button className="login-butt" disabled={!props.passEdit} type="submit">Save New Password</button>
