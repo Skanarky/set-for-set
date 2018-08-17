@@ -34,7 +34,7 @@ function ProfileViewEdit(props) {
             
                     <button className="login-butt" onClick={props.toggleIsEditing}>Back to Profile</button>
                     <button disabled={!props.inputs.name && !props.inputs.email && !props.inputs.avatar} className="login-butt" type="submit">Save Changes</button>
-                    <button style={{backgroundColor: "darkred" }} className="login-butt" onClick={props.handleDeleteUser}>DELETE Profile</button>
+                    <button style={{backgroundColor: "darkred", position: "absolute", transform: "translateX(-50%) translateY(-50%)", bottom: "10%", left: "50%" }} className="login-butt" onClick={props.handleDeleteUser}>DELETE Profile</button>
                 
 
                 {props.errMsg && <p>{props.errMsg}</p>}
