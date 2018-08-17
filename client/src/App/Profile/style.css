@@ -1,13 +1,16 @@
 .signup-form-wrapper {
+    grid-area: cnt;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
-    background-size: cover;
-    height: 70vh;
-    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-repeat: repeat;
     color: white;
+    background-color: rgba(187, 74, 74, 0.699);
+    background-blend-mode: darken;
     border: 0;
 }
 

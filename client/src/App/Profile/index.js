@@ -4,7 +4,7 @@ import ProfileViewEdit from "./ProfileViewEdit.js";
 import ProfilePassEdit from "./ProfilePassEdit.js";
 
 import { connect } from "react-redux";
-import { signup, editUser } from "../../redux/auth.js";
+import { login, editUser } from "../../redux/auth.js";
 
 import "./style.css";
 
@@ -137,7 +137,7 @@ class Profile extends Component {
         // console.log(this.props);
         if (isEditing) {
             return (
-                <div className="signup-form-wrapper">
+                <div className="login-form-wrapper">
                     <ProfileViewEdit
                         handleChange={this.handleChange}
                         handleSubmit={this.handleSubmit}
@@ -150,7 +150,7 @@ class Profile extends Component {
             )
         } else if (isEditingPass) {
             return (
-                <div className="signup-form-wrapper">
+                <div className="login-form-wrapper">
                     <ProfilePassEdit
                         handleChange={this.handleChange}
                         handleSubmitPass={this.handleSubmitPass}
@@ -163,16 +163,16 @@ class Profile extends Component {
             )
         } else {
             return (
-                <div className="signup-form-wrapper">
-                    <div className="signup-form-container">
-                        <h3 className="signup-head">Profile</h3>
+                <div className="login-form-wrapper">
+                    <div className="login-form-container">
+                        <h3 className="login-head">Profile</h3>
                         {!this.props.avatar ? "" : <img className="avatar" src={this.props.avatar} alt="Profile" />}
-                        <h4 className="signup-form-input" style={{ textTransform: "capitalize" }} >Name: {this.props.name}</h4>
-                        <h4 className="signup-form-input">Email: {this.props.email}</h4>
-                        <h4 className="signup-form-input">Best Score: {this.props.bestScore}</h4>
+                        <h4 className="login-form-input" style={{ textTransform: "capitalize" }} >Name: {this.props.name}</h4>
+                        <h4 className="login-form-input">Email: {this.props.email}</h4>
+                        <h4 className="login-form-input">Best Score: {this.props.bestScore}</h4>
                         <div className="buttProfile">
-                            <button className="signup-butt" onClick={this.toggleIsEditing}>Edit Profile</button>
-                            <button className="signup-butt" onClick={this.toggleIsEditingPass}>{"Edit Pass-\nword"}</button>
+                            <button className="login-butt" onClick={this.toggleIsEditing}>Edit Profile</button>
+                            <button className="login-butt" onClick={this.toggleIsEditingPass}>{"Edit Pass-\nword"}</button>
                         </div>
                     </div>
                 </div>
@@ -181,4 +181,4 @@ class Profile extends Component {
     }
 }
 
-export default connect(state => state.user, { signup, editUser })(Profile);
+export default connect(state => state.user, { login, editUser })(Profile);

@@ -2,7 +2,7 @@
     grid-area: cnt;
     height: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     /* background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
@@ -24,9 +24,9 @@
 .login-form-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
+    margin: auto;
     align-items: center;
-    align-content: center; */
+    /* align-content: center; */
     /* width: 100vw; */
 }
 

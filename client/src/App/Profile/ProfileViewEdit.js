@@ -5,44 +5,42 @@ function ProfileViewEdit(props) {
     if (props.msgSuccess) {
         setTimeout(props.toggleIsEditing, 2000);
         return (
-            <div className="signup-form-wrapper">
-                <form className="signup-form-container">
-                    <h3 className="signup-head">{props.msgSuccess}</h3>
+            <div className="login-form-wrapper">
+                <form className="login-form-container">
+                    <h3 className="login-head">{props.msgSuccess}</h3>
                 </form>
             </div>
         )
     };
     return (
-        <div className="signup-form-wrapper">
-            <form className="signup-form-container" onSubmit={props.handleSubmit}>
-                <h3 className="signup-head">Profile</h3>
-                <input className="signup-form-input" onChange={props.handleChange}
+            <form className="login-form-container" onSubmit={props.handleSubmit}>
+                <h3 className="login-head">Profile</h3>
+                <input className="login-form-input" onChange={props.handleChange}
                     value={props.inputs.name}
                     name="name"
                     type="text"
                     placeholder="Change Name" />
 
-                <input className="signup-form-input" onChange={props.handleChange}
+                <input className="login-form-input" onChange={props.handleChange}
                     value={props.inputs.email}
                     name="email"
                     type="text"
                     placeholder="Change Email" />
-                <input className="signup-form-input" onChange={props.handleChange}
+                <input className="login-form-input" onChange={props.handleChange}
                     value={props.inputs.avatar}
                     name="avatar"
                     type="url"
                     placeholder="Change Avatar" />
-                <div style={{ display: "flex", flexDirection: "row" }}>
-                    <button className="signup-butt" onClick={props.toggleIsEditing}>Back to Profile</button>
-                    <button className="signup-butt" type="submit">Save Changes</button>
-                    <button style={{backgroundColor: "red" }} className="signup-butt" onClick={props.handleDeleteUser}>DELETE Profile</button>
-                </div>
+            
+                    <button className="login-butt" onClick={props.toggleIsEditing}>Back to Profile</button>
+                    <button className="login-butt" type="submit">Save Changes</button>
+                    <button style={{backgroundColor: "darkred" }} className="login-butt" onClick={props.handleDeleteUser}>DELETE Profile</button>
+                
 
                 {props.errMsg && <p>{props.errMsg}</p>}
 
             </form>
 
-        </div>
     )
 }
 
