@@ -30,6 +30,7 @@
     background-repeat: no-repeat;
     height: 100%;
     color: rgb(78, 116, 78);
+    border-bottom: 3px black solid;
 }
 
 .header-title {
@@ -117,8 +118,9 @@ footer {
     background-repeat: no-repeat;
     height: 100%;
     /* bottom: 0; */
-    padding-top: 1.5vw;
-    font-size: 3.5vw;
+    padding-top: .7vw;
+    font-size: 2.5vw;
+    border-top: 3px black solid;
 }
 
 .footer-wrapper {
@@ -138,7 +140,7 @@ footer {
 .noLine {
     text-decoration: none;
     /* color: auto; */
-    font-size: 3.5vw;
+    font-size: 2.9vw;
 }
 .noLine:hover {
     text-decoration: underline;
