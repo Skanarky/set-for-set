@@ -10,7 +10,7 @@
 }
 
 .app-wrapper {
-    position: sticky;
+    position: fixed;
     display: grid;
     grid-template-areas: "hdr" "cnt" "ftr";
     grid-template-rows: 10% 83% 7%;
@@ -191,7 +191,7 @@ button {
 
 @media only screen and (min-width: 768px) {
     .app-wrapper {
-        /* position: initial; */
+        position: initial;
         grid-template-rows: 10% 85% 5%;
         /* background: white; */
         /* height: 100vh; */
