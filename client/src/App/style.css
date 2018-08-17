@@ -109,21 +109,23 @@ nav {
 footer {
     grid-area: ftr;
     display: flex;
-    align-content: center;
+    /* align-content: center; */
+    align-items: center;
     background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     /* bottom: 0; */
-    padding: 1.5vw;
+    padding-top: 1.5vw;
     font-size: 3.5vw;
 }
 
 .footer-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    align-content: center;
     color: rgb(78, 116, 78);
 }
 
@@ -135,17 +137,18 @@ footer {
 
 .noLine {
     text-decoration: none;
-    color: auto;
+    /* color: auto; */
     font-size: 3.5vw;
 }
 .noLine:hover {
     text-decoration: underline;
     color: blue;
+    cursor: pointer;
 }
 
 button {
     cursor: pointer;
-    padding: 4px;
+    /* padding: 4px; */
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -173,21 +176,36 @@ button {
 
 /* Small Devices, Tablets */
 
-/* @media only screen and (min-width: 768px) {
-    a {
-        font-size: 3vw;
-        padding: 20px;
+@media (max-width: 320px) {
+    .header-title {
+        /* width: 10%; */
+        font-size: 3.5em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .app-wrapper {
+        grid-template-rows: 10% 85% 5%;
+        /* background: white; */
+        /* height: 100vh; */
     }
     footer {
-        padding: .6vw;
-        padding-left: 1vw;
-        font-size: 1.4vw;
+        font-size: 2.5vw;
+        /* padding: 0;
+        padding: 3px; */
+        padding-top: 1vw;
     }
     .copyright {
-        padding-top: 5px;
+        /* padding-left: 5px; */
+        padding: 0;
         font-size: 1.3vw;
     }
-} */
+    
+    .noLine {
+        /* text-decoration: none;
+        color: auto; */
+        font-size: 2vw;
+    }
+}
 
 /* Medium Devices, Desktops */
 
@@ -219,53 +237,176 @@ button {
 
 /* Large Devices & Wide Screens */
 
-/* @media only screen and (min-width: 1200px) {
-    .header-wrapper {
-        height: 29.5vh;
+@media only screen and (min-width: 1024px) {
+    .app-wrapper {
+        grid-template-rows: 9% 86% 5%;
+        /* background: white; */
+        /* height: 100vh; */
     }
-    .header-title {
-        width: 45vw;
-    }
-    a {
-        font-size: 2vw;
-        padding: 50px;
-    }
-    .noLine {
-        font-size: 1vw;
-        padding: 10px;
-    }
-    .nav-wrapper {
-        height: 3vw;
-    }
+    
     footer {
-        padding: .6vw;
-        padding-left: 1vw;
-        font-size: 1.1vw;
+        font-size: 1.5vw;
+        padding: 0;
+        padding-top: .3vw;
     }
     .copyright {
-        padding-top: 5px;
-        font-size: .9vw;
+        /* padding-left: 5px; */
+        padding: 0;
+        font-size: 1.1vw;
     }
-} */
+    
+    .noLine {
+        /* text-decoration: none;
+        color: auto; */
+        font-size: 1.4vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-height: 1366px) {
+    .fa {
+        height: 50px;
+        width: 50px;
+    }
+
+    .fa-sign-in {
+        padding: 4px;
+        padding-left: 5px;
+        font-size: 2.5em;
+    }
+    
+    .fa-user-plus {
+        padding: 6px;
+        padding-left: 7px;
+        font-size: 2em;
+    }
+    
+    .fa-question {
+        padding: 2px;
+        padding-left: 10px;
+        font-size: 2.7em;
+    }
+    .fa-play {
+        padding: 5px;
+        padding-left: 12.5px;
+        font-size: 2.35em;
+    }
+    .fa-home {
+        padding: 3.5px;
+        padding-left: 4.5px;
+        font-size: 2.5em;
+    }
+    .fa-sign-out {
+        /* padding: 4.5px;
+        padding-left: 7px; */
+        padding: 4px;
+        padding-left: 8px;
+        font-size: 2.5em;
+    }
+    footer {
+        font-size: 2vw;
+        padding: 0;
+        padding-top: 1vw;
+    }
+    .copyright {
+        /* padding-left: 5px; */
+        font-size: 1.5vw;
+    }
+    
+    .noLine {
+        /* text-decoration: none;
+        color: auto; */
+        font-size: 2vw;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .header-title {
+        width: 35%;
+        font-size: 5.5em;
+        padding-top: 25px;
+        padding-left: 80px;
+    }
+    nav {
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* justify-content: center; */
+        /* background: #CD5454; */
+    }
+
+    .fa {
+        height: 50px;
+        width: 50px;
+    }
+
+    .fa-sign-in {
+        padding: 4px;
+        padding-left: 5px;
+        font-size: 2.5em;
+    }
+    
+    .fa-user-plus {
+        padding: 6px;
+        padding-left: 7px;
+        font-size: 2em;
+    }
+    
+    .fa-question {
+        padding: 2px;
+        padding-left: 10px;
+        font-size: 2.7em;
+    }
+    .fa-play {
+        padding: 5px;
+        padding-left: 12.5px;
+        font-size: 2.35em;
+    }
+    .fa-home {
+        padding: 3.5px;
+        padding-left: 4.5px;
+        font-size: 2.5em;
+    }
+    .fa-sign-out {
+        /* padding: 4.5px;
+        padding-left: 7px; */
+        padding: 4px;
+        padding-left: 8px;
+        font-size: 2.5em;
+    }
+    footer {
+        font-size: 1.2vw;
+        padding-top: .75vw;
+    }
+    .copyright {
+        /* padding-left: 5px; */
+        padding: 0;
+        font-size: .8vw;
+    }
+    
+    .noLine {
+        /* text-decoration: none;
+        color: auto; */
+        font-size: 1.2vw;
+    }
+}
 
 /* Extra-Large Devices & Wide Screens */
 
-/* @media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1367px) {
   
-    nav {
-        padding: 5px;
-        font-size: 1.2vw;
-    }
-    .nav-wrapper {
-        height: 3vw;
-    }
-    footer {
-        padding: .6vw;
-        padding-left: 1vw;
-        font-size: .9vw;
+    footer { 
+        font-size: 1vw;
+        padding-top: .2vw;
     }
     .copyright {
-        padding-top: 5px;
-        font-size: .7vw;
+        padding-left: 5px;
+        padding: 0;
+        font-size: .9vw;
     }
-} */
+    
+    .noLine {
+        /* text-decoration: none;
+        color: auto; */
+        font-size: 1.1vw;
+    }
+}

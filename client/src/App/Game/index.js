@@ -157,7 +157,7 @@ class Game extends Component {
                             collectedSets: prevState.collectedSets + 1,
                             selectedCardsForSet: this.initialState.selectedCardsForSet,
                             messageForSet: true,
-                            gameMessage: "Good, job! That's a SET!"
+                            gameMessage: "You got a SET!"
                         }
                     }, () =>
                             setTimeout(() => {
@@ -175,7 +175,7 @@ class Game extends Component {
                         return {
                             selectedCardsForSet: this.initialState.selectedCardsForSet,
                             messageForSet: true,
-                            gameMessage: "This is not a SET!"
+                            gameMessage: "Not a SET!"
                         }
                     }, () =>
                             setTimeout(() => {
@@ -221,7 +221,7 @@ class Game extends Component {
                     <div className="stats">
                         <div className="message-for-set">
                             {!gameOn ? "Cards left: 0" : false || (!messageForSet && gameOn ? <p className="checkSet">Cards left: {(fullDeck.length - (currentCardIndex + 1)) < 0 ? 0 : (fullDeck.length - (currentCardIndex + 1))}</p>
-                                : <p style={{ backgroundColor: "yellow", color: "black" }} className="checkSet">{gameMessage}</p>)}
+                                : <p style={{ backgroundColor: "white", color: "black" }} className="checkSet">{gameMessage}</p>)}
                         </div>
 
                         <div className="sets-container">

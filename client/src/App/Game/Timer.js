@@ -88,8 +88,8 @@ export default class Timer extends Component {
             </div>
             : null
           )}
-          {(this.state.secsPast === 0
-            ? <button className="start-game" onClick={this.startClick}>START GAME</button>
+          {(!this.props.gameOn
+            ? <button className="start-game centerButton" onClick={this.startClick}>START GAME</button>
             : ""
           )}
           {this.props.cardsAvailable === 0 || this.props.hideDeck || !this.props.gameOn

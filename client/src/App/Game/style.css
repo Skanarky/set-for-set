@@ -30,6 +30,7 @@
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 5px;
+    padding-bottom: 5px;
     /* padding-right: 7px; */
 }
 
@@ -43,10 +44,10 @@
 }
 
 button {
-    box-shadow: 0px 3px 3px 2px rgba(205, 84, 84, 0.85);
+    box-shadow: 0px 0px 0px 3px rgba(205, 84, 84, 0.85);
 }
 button:hover {
-    box-shadow: 0px 1px 2px 1px rgba(205, 84, 84, 0.85);
+    box-shadow: 0px 0px .5px 1px rgba(205, 84, 84, 0.85);
 }
 
 .card {
@@ -56,14 +57,14 @@ button:hover {
     cursor: pointer;
     border: 4px solid black;
     border-radius: 12px;
-    height: 34vw;
+    height: 33.5vw;
     width: 24vw;
     margin: auto;
     margin-bottom: 5px;
 }
 
 .selected {
-    border: 10px solid yellow;
+    border: 10px solid rgb(78, 116, 78);;
     border-radius: 12px;
 }
 
@@ -73,9 +74,10 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid black;
+    border: 3px solid black;
     background-color: rgb(78, 116, 78);
     border-radius: 10px;
+    padding: 3px;
     /* width: 97vw; */
     /* padding: 5px; */
 }
@@ -91,14 +93,17 @@ button:hover {
 
 .checkSet {
     border-radius: 10px;
-    font-size: 7vw;
+    font-size: 6.5vw;
     /* width: 40%; */
-    /* border: 5px solid black;
-    background-color: rgb(78, 116, 78); */
+    /* border: 5px solid black; */
+    color: black;
+    background-color: rgb(187, 74, 74);
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .message-for-set {
-    font-size: 7vw;
+    font-size: 6.5vw;
     border-radius: 10px;
     text-align: center;
     width: 40%;
@@ -156,6 +161,20 @@ button:hover {
     font-size: 3vw;
     padding: 4px;
     margin: 5px;
+}
+
+.centerButton {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 33%;
+    left: 50%;
+    width: 15vw;
+    height: 15vw;
+    box-shadow: 0px 0px 0px 3px rgb(78, 116, 78);
+}
+
+.centerButton:hover {
+    box-shadow: 0px 0px .5px 1px rgb(78, 116, 78);
 }
 
 /* .checkSet {
@@ -338,7 +357,7 @@ button:hover {
 
 @media only screen and (min-width: 1367px) {
     .card:hover {
-        border: 10px solid yellow;
+        border: 10px solid rgb(78, 116, 78);
         border-radius: 12px;
         cursor: pointer;
     }
