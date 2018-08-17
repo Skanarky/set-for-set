@@ -32,7 +32,7 @@ function ProfileViewEdit(props) {
                     type="url"
                     placeholder="Change Avatar" />
             
-                    <button className="login-butt" onClick={props.toggleIsEditing}>Back to Profile</button>
+                    <button disabled={!props.inputs.name && !props.inputs.email && !props.inputs.avatar} className="login-butt" onClick={props.toggleIsEditing}>Back to Profile</button>
                     <button className="login-butt" type="submit">Save Changes</button>
                     <button style={{backgroundColor: "darkred" }} className="login-butt" onClick={props.handleDeleteUser}>DELETE Profile</button>
                 
