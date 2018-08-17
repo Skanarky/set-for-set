@@ -25,7 +25,7 @@
     /* width: 100vw; */
     display: grid;
     grid-template-areas: "gma" "sts";
-    grid-template-rows: 72% 28%;
+    grid-template-rows: 79% 21%;
     height: 100%;
     padding-left: 7px;
     padding-right: 7px;
@@ -44,10 +44,14 @@
 }
 
 button {
-    box-shadow: 0px 0px 0px 3px rgba(205, 84, 84, 0.85);
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    box-shadow: 0px 0px 0px 3px rgba(187, 74, 74);
 }
 button:hover {
-    box-shadow: 0px 0px .5px 1px rgba(205, 84, 84, 0.85);
+    box-shadow: 0px 0px .5px 1px rgba(187, 74, 74);
+    color: rgb(231, 80, 80);
 }
 
 .card {
@@ -63,8 +67,14 @@ button:hover {
     margin-bottom: 5px;
 }
 
+.card:hover {
+    border: 10px solid rgb(23, 201, 23);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
 .selected {
-    border: 10px solid rgb(78, 116, 78);;
+    border: 10px solid rgb(23, 201, 23);
     border-radius: 12px;
 }
 
@@ -98,6 +108,7 @@ button:hover {
     /* border: 5px solid black; */
     color: black;
     background-color: rgb(187, 74, 74);
+    border: 2px black solid;
     padding-left: 2px;
     padding-right: 2px;
 }
@@ -144,7 +155,7 @@ button:hover {
 .butts-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
     padding-left: 5px;
     /* padding-right: 7px; */
 }
@@ -158,9 +169,9 @@ button:hover {
     align-items: center;
     cursor: pointer;
     border-radius: 6px;
-    font-size: 3vw;
-    padding: 4px;
-    margin: 5px;
+    font-size: 2.8vw;
+    /* padding: 2px; */
+    margin-bottom: 9px;
 }
 
 .centerButton {
@@ -170,11 +181,17 @@ button:hover {
     left: 50%;
     width: 15vw;
     height: 15vw;
-    box-shadow: 0px 0px 0px 3px rgb(78, 116, 78);
+    background-color: rgb(78, 116, 78);
+    color: rgb(187, 74, 74);
+    border: 3px black solid;
+    box-shadow: 0px 0px 0px 2px rgba(82, 81, 81);
+    border-radius: 50%;
+    font-weight: 700;
 }
 
 .centerButton:hover {
-    box-shadow: 0px 0px .5px 1px rgb(78, 116, 78);
+    box-shadow: 0px 0px .5px 1px rgba(82, 81, 81);
+    color: rgb(231, 80, 80);
 }
 
 /* .checkSet {
@@ -351,16 +368,14 @@ button:hover {
         margin: 5px;
         font-size: 2.5vw;
     }
+    .centerButton {
+        box-shadow: 0px 0px 0px 3px rgba(82, 81, 81);
+    }
 }
 
 /* Extra-Large Devices & Wide Screens */
 
 @media only screen and (min-width: 1367px) {
-    .card:hover {
-        border: 10px solid rgb(78, 116, 78);
-        border-radius: 12px;
-        cursor: pointer;
-    }
     .message-for-set {
         width: 270px;
     }
