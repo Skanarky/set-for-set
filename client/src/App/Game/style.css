@@ -24,7 +24,7 @@
     /* width: 100vw; */
     display: grid;
     grid-template-areas: "gma" "sts";
-    grid-template-rows: 77% 23%;
+    grid-template-rows: 75% 25%;
     height: 100%;
     padding-left: 7px;
     padding-right: 7px;
