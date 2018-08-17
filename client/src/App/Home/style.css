@@ -3,12 +3,10 @@
     grid-area: cnt;
     background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
-    /* background-size: cover; */
     background-repeat: repeat;
     background-color: rgba(187, 74, 74, 0.699);
     background-blend-mode: darken;
     overflow: scroll;
-    /* width: 100vw; */
 }
 
 .welcome {
@@ -29,19 +27,16 @@
 .userName {
     text-decoration: underline;
     text-transform: capitalize;
-    /* color: #9A5EB2; */
     color: rgb(97, 143, 97);
     background-color: white;
     font-family: "Arcade";
     font-size: 8vw;
-    /* font-style: italic; */
     padding: 5px;
     border-radius: 10px;
     border: 3px black solid;
 }
 
 .userName:hover {
-    /* color: hsl(283, 32%, 43%); */
     color: rgb(187, 74, 74);
 }
 
@@ -58,8 +53,6 @@
     justify-content: center;
     padding: 30px;
     padding-left: 50px;
-    /* background: rgb(107, 156, 107); */
-    /* background: rgba(187, 74, 74); */
     background: rgba(138, 82, 160, 0.607);
     border-radius: 15px;
     width: 80vw;
@@ -144,6 +137,5 @@
     }
     .smallAvatar {
         max-width: 70px;
-        /* padding-bottom: 15px; */
     }
 }

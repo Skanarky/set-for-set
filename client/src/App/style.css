@@ -14,16 +14,13 @@
     display: grid;
     grid-template-areas: "hdr" "cnt" "ftr";
     grid-template-rows: 10% 83% 7%;
-    /* background: white; */
     height: 100vh;
 }
 
 .header-wrapper {
     grid-area: hdr;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
-    /* justify-content: space-evenly; */
     align-items: center;
     background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
@@ -41,7 +38,6 @@
     font-size: 4.35em;
     padding-top: 20px;
     padding-left: 15px;
-    /* margin-left: 20px; */
 }
 
 nav {
@@ -49,8 +45,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* justify-content: center; */
-    /* background: #CD5454; */
 }
 
 .fa {
@@ -103,24 +97,15 @@ nav {
     font-size: 2.1em;
 }
 
-/* a {
-    color: white;
-    text-decoration: none;
-    font-size: 4vw;
-    padding: 10px;
-} */
-
 footer {
     grid-area: ftr;
     display: flex;
-    /* align-content: center; */
     align-items: center;
     background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    /* bottom: 0; */
     padding-top: .3vw;
     font-size: 2.5vw;
     border-top: 3px black solid;
@@ -129,20 +114,17 @@ footer {
 .footer-wrapper {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     align-content: center;
     color: rgb(78, 116, 78);
 }
 
 .copyright {
     padding-left: 5px;
-    /* padding-top: 2px; */
     font-size: 2.5vw;
 }
 
 .noLine {
     text-decoration: none;
-    /* color: auto; */
     font-size: 2.8vw;
 }
 
@@ -154,37 +136,10 @@ footer {
 
 button {
     cursor: pointer;
-    /* padding: 4px; */
 }
-
-/* ---------------------------------------------------------------------------------------------------------------------------------------- */
-
-/* Extra Small Devices, Phones */
-
-/* @media only screen and (min-width: 550px) {
-    nav {
-        padding: 10px;
-        font-size: 2.5vw;
-    }
-    .nav-wrapper {
-        height: 6vw;
-    }
-    footer {
-        padding: 1vw;
-        padding-left: 1vw;
-        font-size: 2vw;
-    }
-    .copyright {
-        padding-top: 5px;
-        font-size: 1.5vw;
-    }
-} */
-
-/* Small Devices, Tablets */
 
 @media (max-width: 320px) {
     .header-title {
-        /* width: 10%; */
         font-size: 3.5em;
     }
 }
@@ -193,62 +148,23 @@ button {
     .app-wrapper {
         position: initial;
         grid-template-rows: 10% 85% 5%;
-        /* background: white; */
-        /* height: 100vh; */
     }
     footer {
         font-size: 2.5vw;
-        /* padding: 0;
-        padding: 3px; */
         padding-top: .5vw;
     }
     .copyright {
-        /* padding-left: 5px; */
         padding: 0;
         font-size: 1.3vw;
     }
     .noLine {
-        /* text-decoration: none;
-        color: auto; */
         font-size: 1.9vw;
     }
 }
 
-/* Medium Devices, Desktops */
-
-/* @media only screen and (min-width: 992px) {
-    a {
-        font-size: 2.7vw;
-    }
-    nav {
-        padding: 5px;
-        font-size: 2vw;
-    }
-    .nav-wrapper {
-        height: 4vw;
-    }
-    .noLine {
-        font-size: 2vw;
-        padding: 10px;
-    }
-    footer {
-        padding: .6vw;
-        padding-left: 1vw;
-        font-size: 1.4vw;
-    }
-    .copyright {
-        padding-top: 5px;
-        font-size: 1.1vw;
-    }
-} */
-
-/* Large Devices & Wide Screens */
-
 @media only screen and (min-width: 1024px) {
     .app-wrapper {
         grid-template-rows: 9% 86% 5%;
-        /* background: white; */
-        /* height: 100vh; */
     }
     footer {
         font-size: 1.5vw;
@@ -256,13 +172,10 @@ button {
         padding-top: .15vw;
     }
     .copyright {
-        /* padding-left: 5px; */
         padding: 0;
         font-size: 1.1vw;
     }
     .noLine {
-        /* text-decoration: none;
-        color: auto; */
         font-size: 1.3vw;
     }
 }
@@ -298,8 +211,6 @@ button {
         font-size: 2.5em;
     }
     .fa-sign-out {
-        /* padding: 4.5px;
-        padding-left: 7px; */
         padding: 4px;
         padding-left: 8px;
         font-size: 2.5em;
@@ -310,12 +221,9 @@ button {
         padding-top: 1vw;
     }
     .copyright {
-        /* padding-left: 5px; */
         font-size: 1.5vw;
     }
     .noLine {
-        /* text-decoration: none;
-        color: auto; */
         font-size: 2vw;
     }
 }
@@ -332,8 +240,6 @@ button {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        /* justify-content: center; */
-        /* background: #CD5454; */
     }
     .fa {
         height: 50px;
@@ -365,8 +271,6 @@ button {
         font-size: 2.5em;
     }
     .fa-sign-out {
-        /* padding: 4.5px;
-        padding-left: 7px; */
         padding: 4px;
         padding-left: 8px;
         font-size: 2.5em;
@@ -376,18 +280,13 @@ button {
         padding-top: .4vw;
     }
     .copyright {
-        /* padding-left: 5px; */
         padding: 0;
         font-size: .9vw;
     }
     .noLine {
-        /* text-decoration: none;
-        color: auto; */
         font-size: 1.2vw;
     }
 }
-
-/* Extra-Large Devices & Wide Screens */
 
 @media only screen and (min-width: 1367px) {
     footer {
@@ -400,8 +299,6 @@ button {
         font-size: .9vw;
     }
     .noLine {
-        /* text-decoration: none;
-        color: auto; */
         font-size: 1vw;
     }
 }
@@ -409,7 +306,6 @@ button {
 @media only screen and (min-width: 2000px) {
     .header-title {
         font-size: 8em;
-        /* margin-left: 20px; */
     }
     footer {
         padding-top: .3vw;

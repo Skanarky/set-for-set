@@ -2,14 +2,11 @@
 .landing-wrapper {
     grid-area: cnt;
     height: 100%;
-    /* background: white; */
     background: url("https://i.imgur.com/LGVMYT6.png");
     background-position: center;
-    /* background-size: cover; */
     background-repeat: repeat;
     background-color: rgba(187, 74, 74, 0.699);
     background-blend-mode: darken;
-    /* width: 100vw; */
 }
 
 .landing-rules-wrapper {
@@ -19,7 +16,6 @@
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    /* width: 100vw; */
 }
 
 .landing-rules-head {
@@ -88,192 +84,22 @@
 
 .landing-login-butt:hover {
     box-shadow: 0px 0px .5px 1px rgb(78, 116, 78);
-    /* font-size: 3.9vw; */
 }
 
-/* Extra Small Devices, Phones */
-
-/* @media only screen and (min-width: 600px) {
-    .landing-rules-wrapper {
-        padding-top: 20px;
-        padding-bottom: 50px;
-        width: 100vw;
-    }
-    .landing-rules-head {
-        font-weight: 900;
-        font-size: 9vw;
-    }
-    .landing-rules-subhead {
-        padding-bottom: 20px;
-        font-size: 3.5vw;
-    }
-    .landing-rules-text {
-        padding: 5px;
-        padding-bottom: 20px;
-        font-weight: 600;
-        font-size: 3.2vw;
-    }
-    .landing-rules-info {
-        padding-bottom: 20px;
-        font-weight: 600;
-        font-size: 3.2vw;
-    }
-    .landing-example-sets {
-        width: 70vw;
-    }
-    .landing-prompt {
-        padding: 8px;
-        padding-top: 15px;
-        font-weight: 700;
-        font-size: 5vw;
-    }
-} */
-
-/* Small Devices, Tablets */
-
-/* @media only screen and (min-width: 768px) {
-    .landing-rules-wrapper {
-        padding-top: 20px;
-        padding-bottom: 70px;
-    }
-    .landing-rules-head {
-        font-weight: 900;
-        font-size: 8vw;
-    }
-    .landing-rules-subhead {
-        padding-bottom: 20px;
-        font-size: 3vw;
-    }
-    .landing-rules-text {
-        padding: 5px;
-        padding-bottom: 20px;
-        font-weight: 600;
-        font-size: 2.8vw;
-    }
-    .landing-rules-info {
-        margin-left: 6vw;
-        margin-right: 6vw;
-        padding-bottom: 20px;
-        font-weight: 600;
-        font-size: 2.8vw;
-    }
-    .landing-example-sets {
-        width: 60vw;
-    }
-    .landing-prompt {
-        padding: 8px;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        font-weight: 700;
-        font-size: 5vw;
-    }
-} */
-
-/* Medium Devices, Desktops */
-
-/* @media only screen and (min-width: 768px) {
-    .landing-rules-wrapper {
-        padding-top: 20px;
-        padding-bottom: 70px;
-    }
-    .landing-rules-head {
-        font-weight: 900;
-        font-size: 8vw;
-    }
-    .landing-rules-subhead {
-        padding-bottom: 20px;
-        font-size: 3vw;
-    }
-    .landing-rules-text {
-        padding: 5px;
-        padding-bottom: 20px;
-        font-weight: 600;
-        font-size: 2.8vw;
-    }
-    .landing-rules-info {
-        margin-left: 6vw;
-        margin-right: 6vw;
-        padding-bottom: 20px;
-        font-weight: 600;
-        font-size: 2.8vw;
-    }
-    .landing-example-sets {
-        width: 60vw;
-    }
-    .landing-prompt {
-        padding: 8px;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        font-weight: 700;
-        font-size: 5vw;
-    }
-} */
-
-/* Medium Devices, Desktops */
-
-/* @media only screen and (min-width: 992px) {
-    .landing-rules-wrapper {
-        padding-top: 30px;
-        padding-bottom: 70px;
-    }
-    .landing-rules-head {
-        font-weight: 900;
-        font-size: 6vw;
-    }
-    .landing-rules-subhead {
-        padding-bottom: 20px;
-        font-size: 2.5vw;
-    }
-    .landing-rules-text {
-        padding: 5px;
-        padding-bottom: 20px;
-        font-weight: 600;
-        font-size: 2vw;
-    }
-    .landing-rules-info {
-        margin-left: 12.5vw;
-        margin-right: 12.5vw;
-        padding-bottom: 20px;
-        font-weight: 600;
-        font-size: 2vw;
-    }
-    .landing-example-sets {
-        width: 50vw;
-    }
-    .landing-prompt {
-        padding: 8px;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        font-weight: 700;
-        font-size: 5vw;
-    }
-} */
-
-/* Large Devices, Wide Screens */
-
 @media only screen and (min-width: 1024px) {
-    /* .landing-rules-wrapper {
-        padding-top: 30px;
-        padding-bottom: 70px;
-    } */
     .landing-rules-head {
         font-weight: 900;
         font-size: 4.5vw;
     }
     .landing-rules-subhead {
-        /* padding-bottom: 20px; */
         font-size: 2vw;
     }
     .landing-rules-text {
-        /* padding: 5px; */
         padding-bottom: 20px;
         font-weight: 700;
         font-size: 1.5vw;
     }
     .landing-rules-info {
-        /* margin-left: 16vw;
-        margin-right: 16vw; */
-        /* padding-bottom: 20px; */
         font-weight: 700;
         font-size: 2vw;
     }
@@ -282,14 +108,10 @@
         width: 30vw;
     }
     .landing-prompt {
-        /* padding: 8px;
-        padding-top: 20px; */
-        /* padding-bottom: 25px; */
         font-weight: 700;
         font-size: 2vw;
     }
     .landing-login-butt {
-        /* margin: 10px; */
         border: 3px solid black;
         font-size: 2vw;
     }
