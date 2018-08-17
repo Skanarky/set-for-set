@@ -12,7 +12,7 @@ function LoginForm(props) {
                     onChange={props.handleChange}
                     value={props.email}
                     name="email"
-                    type="text"
+                    type="email"
                     placeholder="Email" />
 
                 <input className="login-form-input"

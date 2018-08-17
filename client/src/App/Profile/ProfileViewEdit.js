@@ -24,7 +24,7 @@ function ProfileViewEdit(props) {
                 <input className="login-form-input" onChange={props.handleChange}
                     value={props.inputs.email}
                     name="email"
-                    type="text"
+                    type="email"
                     placeholder="Change Email" />
                 <input className="login-form-input" onChange={props.handleChange}
                     value={props.inputs.avatar}

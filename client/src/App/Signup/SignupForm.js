@@ -10,7 +10,7 @@ function SignupForm(props) {
                 <input className="login-form-input" onChange={props.handleChange}
                     value={props.email}
                     name="email"
-                    type="text"
+                    type="email"
                     placeholder="Email" />
 
                 <input className="login-form-input" onChange={props.handleChange}
