@@ -36,14 +36,16 @@ class Profile extends Component {
     toggleIsEditing = (event) => {
         this.setState(prevState => {
             return {
-                isEditing: !prevState.isEditing
+                isEditing: !prevState.isEditing,
+                msgSuccess: ""
             }
         });
     }
     toggleIsEditingPass = (event) => {
         this.setState(prevState => {
             return {
-                isEditingPass: !prevState.isEditingPass
+                isEditingPass: !prevState.isEditingPass,
+                msgSuccess: ""
             }
         });
     }
