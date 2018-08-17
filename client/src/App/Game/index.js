@@ -157,7 +157,7 @@ class Game extends Component {
                             collectedSets: prevState.collectedSets + 1,
                             selectedCardsForSet: this.initialState.selectedCardsForSet,
                             messageForSet: true,
-                            gameMessage: "You got a SET!"
+                            gameMessage: "This is a SET!"
                         }
                     }, () =>
                             setTimeout(() => {
