@@ -24,7 +24,7 @@
     grid-area: gma;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    height: 97%;
 }
 
 button {
@@ -219,7 +219,7 @@ button:active {
 @media only screen and (min-width: 768px) {
     .cards-layout {
         width: 85%;
-        margin: auto;
+        margin: 0 auto;
     }
     .card {
         height: 25vw;
@@ -338,9 +338,11 @@ button:active {
     }
     .cards-layout {
         width: 83%;
-        margin: auto;
+        margin: 0 auto;
+        height: 97%;
     }
-    .card 100        height: 24.5vw;
+    .card {
+        height: 24.5vw;
         width: 18vw;
         margin-bottom: 5px;
     }
@@ -372,7 +374,7 @@ button:active {
         width: 65%;
     }
     .card {
-        height: 100vw;
+        height: 21vw;
         width: 15vw;
     }
     .checkSet {
