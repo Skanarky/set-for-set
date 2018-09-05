@@ -24,7 +24,7 @@
     grid-area: gma;
     display: flex;
     flex-wrap: wrap;
-    height: 90%;
+    /* height: 90%; */
 }
 
 button {
