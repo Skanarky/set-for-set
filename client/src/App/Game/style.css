@@ -24,7 +24,7 @@
     grid-area: gma;
     display: flex;
     flex-wrap: wrap;
-    /* height: 90%; */
+    height: 76%;
 }
 
 button {
@@ -78,6 +78,7 @@ button:active {
     background-color: rgb(78, 116, 78);
     border-radius: 10px;
     padding: 3px;
+    height: 24%;
 }
 
 .sets-container {
