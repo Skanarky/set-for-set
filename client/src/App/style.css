@@ -28,7 +28,12 @@
     background-repeat: no-repeat;
     height: 100%;
     color: rgb(78, 116, 78);
-    border-bottom: 3px black solid;
+    border-bottom: 2px solid rgb(78, 116, 78);
+    /* -webkit-box-shadow: 0px 3px 10px 0px rgb(78, 116, 78);
+    -moz-box-shadow: 0px 3px 10px 0px rgb(78, 116, 78);
+    box-shadow: 0px 3px 10px 0px rgb(78, 116, 78);
+    overflow: visible;
+    z-index: +2; */
 }
 
 .header-title {
@@ -38,6 +43,7 @@
     font-size: 4.35em;
     padding-top: 20px;
     padding-left: 15px;
+    text-shadow: 2px 2px 3px rgb(187, 74, 74);
 }
 
 nav {
@@ -51,15 +57,25 @@ nav {
     height: 40px;
     width: 40px;
     color: rgb(187, 74, 74);
-    border: 2px black solid;
+    border: 1px solid black;
     border-radius: 50%;
     background: rgb(78, 116, 78);
-    box-shadow: 0px 0px 0px 3px rgba(82, 81, 81);
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+    box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
 }
 
 .fa:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 0.5px 1px rgba(82, 81, 81);
+    color: rgb(231, 65, 65);
+    /* box-shadow: 0px 0px 0.5px 1px rgba(82, 81, 81); */
+}
+
+.fa:active {
+    transform: translateY(2px);
+    -webkit-box-shadow: 0px 1px 2px 0px rgb(70, 69, 69), inset 0 2px 5px rgba(0,0,0,.7), inset 0 -2px 3px rgba(255,255,255,.8);
+    -moz-box-shadow: 0px 1px 2px 0px rgb(70, 69, 69), inset 0 2px 5px rgba(0,0,0,.7), inset 0 -2px 3px rgba(255,255,255,.8);
+    box-shadow: 0px 1px 2px 0px rgb(70, 69, 69), inset 0 2px 5px rgba(0,0,0,.7), inset 0 -2px 3px rgba(255,255,255,.8);
 }
 
 .fa-sign-in {
@@ -116,6 +132,7 @@ footer {
     flex-direction: column;
     align-content: center;
     color: rgb(78, 116, 78);
+    border-top: 2px solid rgb(78, 116, 78);
 }
 
 .copyright {
@@ -234,6 +251,7 @@ button {
         font-size: 5.5em;
         padding-top: 25px;
         padding-left: 80px;
+        text-shadow: 3px 3px 4px rgb(187, 74, 74);
     }
     nav {
         width: 65%;
