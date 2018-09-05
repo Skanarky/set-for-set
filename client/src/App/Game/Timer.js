@@ -83,7 +83,7 @@ export default class Timer extends Component {
             this.incrementer === this.state.lastIncrementer
             ?
             <div className="game-butts">
-              <button className="start-game" onClick={this.restartTmer}>RESUME</button>
+              <button className="start-game resume" onClick={this.restartTmer}>RESUME</button>
               <button className="new-game" onClick={this.newGameClick}>NEW GAME</button>
             </div>
             : null
@@ -92,11 +92,11 @@ export default class Timer extends Component {
             ? <button className="start-game centerButton" onClick={this.startClick}>START</button>
             : ""
           )}
-          {this.props.cardsAvailable === 0 || this.props.hideDeck || !this.props.gameOn
-          ? "" :
-            <button className="pause-game" onClick={this.props.addCards}>REPLACE 3 CARDS</button>}
           {this.props.hideDeck || !this.props.gameOn ? "" :
-            <button className="pause-game" onClick={this.pauseClick}>PAUSE</button>}
+            <button className="pause-game" onClick={this.pauseClick}>II</button>}
+          {this.props.cardsAvailable === 0 || this.props.hideDeck || !this.props.gameOn
+            ? "" :
+            <button className="replace-cards" onClick={this.props.addCards}>REPLACE 3 CARDS</button>}
           {!this.props.gameOn ? "" :
             <button className="end-game" onClick={this.finishGameClick}>END GAME & SAVE</button>}
         </div>
