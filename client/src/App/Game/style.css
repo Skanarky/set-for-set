@@ -31,9 +31,9 @@ button {
     background-color: #adadad;
     color: black;
     border: 1px black solid;
-    -webkit-box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
-    -moz-box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
-    box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+    box-shadow: 0px 1px 3px 0px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
     /* box-shadow: 0px 0px 0px 3px rgba(187, 74, 74); */
 }
 
@@ -96,7 +96,7 @@ button:active {
     border: 1px black solid;
     padding-left: 2px;
     padding-right: 2px;
-    text-shadow: 3px 4px 3px rgb(50, 50, 50);
+    text-shadow: 2px 2px 2px rgb(50, 50, 50);
     -webkit-box-shadow: 0px 4px 4px 0 rgb(50, 50, 50), 0px 4px 5px 0 rgb(50, 50, 50);
     -moz-box-shadow: 0px 4px 4px 0 rgb(50, 50, 50), 0px 4px 5px 0 rgb(50, 50, 50);
     box-shadow: 1px 4px 4px 0 rgb(50, 50, 50), 1px 4px 5px 0 rgb(50, 50, 50);
@@ -107,13 +107,13 @@ button:active {
     border-radius: 10px;
     text-align: center;
     width: 40%;
-    text-shadow: 3px 4px 3px rgb(50, 50, 50);
+    text-shadow: 2px 2px 2px rgb(50, 50, 50);
 }
 
 .sets-title {
     font-weight: 800;
     font-size: 7vw;
-    text-shadow: 3px 4px 3px rgb(50, 50, 50);
+    text-shadow: 2px 2px 2px rgb(50, 50, 50);
 }
 
 .collected-sets {
@@ -128,9 +128,9 @@ button:active {
     font-size: 5vw;
     color: rgb(78, 116, 78);
     text-shadow: 3px 4px 3px rgb(50, 50, 50);
-    -webkit-box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
-    -moz-box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
-    box-shadow: 0px 2px 3px 1px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+    -webkit-box-shadow: inset 0 4px 5px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
+    -moz-box-shadow: inset 0 4px 5px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
+    box-shadow: inset 0 4px 5px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
 }
 
 .timer-container {
@@ -140,7 +140,7 @@ button:active {
     padding-top: 5px;
     border-radius: 5px;
     font-size: 3vw;
-    text-shadow: 3px 4px 3px rgb(50, 50, 50);
+    text-shadow: 2px 2px 2px rgb(50, 50, 50);
 }
 
 .butts-container {
@@ -231,16 +231,35 @@ button:active {
     }
     .checkSet {
         font-size: 5vw;
+        text-shadow: 3px 4px 3px rgb(50, 50, 50);
     }
     .message-for-set {
         font-size: 6.5vw;
         border-radius: 10px;
         text-align: center;
         width: 30%;
+        text-shadow: 3px 4px 3px rgb(50, 50, 50);
+    }
+    .collected-sets {
+        -webkit-box-shadow: inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+        -moz-box-shadow: inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+        box-shadow: inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+    }
+    button {
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+        box-shadow: 0px 2px 3px 0px rgba(82, 81, 81), inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
+        /* box-shadow: 0px 0px 0px 3px rgba(187, 74, 74); */
     }
     .centerButton {
         width: 12vw;
         height: 12vw;
+    }
+    .sets-title {
+        text-shadow: 3px 4px 3px rgb(50, 50, 50);
+    }
+    .timer-container {
+        text-shadow: 3px 4px 3px rgb(50, 50, 50);
     }
 }
 
