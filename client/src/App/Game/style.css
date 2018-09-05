@@ -31,9 +31,9 @@ button {
     background-color: #adadad;
     color: black;
     border: 1px black solid;
-    -webkit-box-shadow: inset 0 3px 3px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
-    -moz-box-shadow: inset 0 3px 3px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
-    box-shadow: inset 0 3px 3px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
+    -webkit-box-shadow: inset 0 3px 3px rgba(255,255,255,.8), inset 0 -2px 3px rgba(0,0,0,.7);
+    -moz-box-shadow: inset 0 3px 3px rgba(255,255,255,.8), inset 0 -2px 3px rgba(0,0,0,.7);
+    box-shadow: inset 0 3px 3px rgba(255,255,255,.8), inset 0 -2px 3px rgba(0,0,0,.7);
     /* box-shadow: 0px 0px 0px 3px rgba(187, 74, 74); */
 }
 
@@ -107,7 +107,7 @@ button:active {
     border-radius: 10px;
     text-align: center;
     width: 40%;
-    text-shadow: 2px 2px 2px rgb(50, 50, 50);
+    text-shadow: 1px 1px 2px rgb(50, 50, 50);
 }
 
 .sets-title {
@@ -126,11 +126,11 @@ button:active {
     width: 18vw;
     border-radius: 15px;
     font-size: 5vw;
-    color: rgb(78, 116, 78);
+    color: rgb(23, 201, 23);
     text-shadow: 3px 4px 3px rgb(50, 50, 50);
-    -webkit-box-shadow: inset 0 4px 5px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
-    -moz-box-shadow: inset 0 4px 5px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
-    box-shadow: inset 0 4px 5px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
+    -webkit-box-shadow: inset 0 2px 4px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
+    -moz-box-shadow: inset 0 2px 4px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
+    box-shadow: inset 0 2px 4px rgba(255,255,255,.8), inset 0 -3px 4px rgba(0,0,0,.7);
 }
 
 .timer-container {
@@ -238,7 +238,7 @@ button:active {
         border-radius: 10px;
         text-align: center;
         width: 30%;
-        text-shadow: 3px 4px 3px rgb(50, 50, 50);
+        text-shadow: 2px 2px 3px rgb(50, 50, 50);
     }
     .collected-sets {
         -webkit-box-shadow: inset 0 5px 6px rgba(255,255,255,.8), inset 0 -5px 5px rgba(0,0,0,.7);
