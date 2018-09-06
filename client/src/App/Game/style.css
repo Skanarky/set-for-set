@@ -315,6 +315,10 @@ button:active {
         margin-top: 8px;
         margin-bottom: 12px;
     }
+    .pause-game {
+        height: 35px;
+        font-size: 3.7vw;
+    }
 }
 
 /* @media only screen and (max-width: 375px) and (min-height: 812px) {
@@ -393,6 +397,7 @@ button:active {
     }
 
     .pause-game {
+        font-size: 3.8vw;
         width: 60px;
         height: 60px;
         margin-top: 10px;
@@ -496,8 +501,12 @@ button:active {
         font-size: 4.5vw;
     }
 
+    .pause-game {
+        font-size: 3.1vw;
+    }
+
     .start-game.resume {
-        margin-top: 30px;
+        margin-top: 35px;
         margin-bottom: 15px;
     }
 }
@@ -562,6 +571,7 @@ button:active {
         border-radius: 50%; */
         width: 75px;
         height: 75px;
+        font-size: 2.05vw;
         /* margin: 0 auto;
         margin-bottom: 4px; */
     }
