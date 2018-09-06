@@ -93,7 +93,7 @@ button:active {
     font-size: 6.5vw;
     color: white;
     background-color: rgb(187, 74, 74);
-    border: 1px black solid;
+    border: 1px solid white;
     padding-left: 2px;
     padding-right: 2px;
     text-shadow: 2px 2px 2px rgb(50, 50, 50);
@@ -120,7 +120,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid white;
     background-color: rgb(187, 74, 74);
     height: 18vw;
     width: 18vw;
@@ -128,9 +128,12 @@ button:active {
     font-size: 5vw;
     color: rgb(23, 201, 23);
     text-shadow: 3px 4px 3px rgb(50, 50, 50);
-    -webkit-box-shadow: inset 0 2px 4px rgba(255, 255, 255, .8), inset 0 -3px 4px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 4px 4px 0 rgb(50, 50, 50), 0px 4px 5px 0 rgb(50, 50, 50);
+    -moz-box-shadow: 0px 4px 4px 0 rgb(50, 50, 50), 0px 4px 5px 0 rgb(50, 50, 50);
+    box-shadow: 1px 4px 4px 0 rgb(50, 50, 50), 1px 4px 5px 0 rgb(50, 50, 50);
+    /* -webkit-box-shadow: inset 0 2px 4px rgba(255, 255, 255, .8), inset 0 -3px 4px rgba(0, 0, 0, .7);
     -moz-box-shadow: inset 0 2px 4px rgba(255, 255, 255, .8), inset 0 -3px 4px rgba(0, 0, 0, .7);
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, .8), inset 0 -3px 4px rgba(0, 0, 0, .7);
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, .8), inset 0 -3px 4px rgba(0, 0, 0, .7); */
 }
 
 .timer-container {
@@ -169,8 +172,8 @@ button:active {
     font-size: 4vw;
     font-weight: 900;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin: 0 auto;
     margin-bottom: 4px;
 }
@@ -280,9 +283,12 @@ button:active {
     }
 
     .collected-sets {
-        -webkit-box-shadow: inset 0 5px 6px rgba(255, 255, 255, .8), inset 0 -5px 5px rgba(0, 0, 0, .7);
+        -webkit-box-shadow: 0px 4px 4px 0 rgb(50, 50, 50), 0px 4px 5px 0 rgb(50, 50, 50);
+        -moz-box-shadow: 0px 4px 4px 0 rgb(50, 50, 50), 0px 4px 5px 0 rgb(50, 50, 50);
+        box-shadow: 1px 4px 4px 0 rgb(50, 50, 50), 1px 4px 5px 0 rgb(50, 50, 50);
+        /* -webkit-box-shadow: inset 0 5px 6px rgba(255, 255, 255, .8), inset 0 -5px 5px rgba(0, 0, 0, .7);
         -moz-box-shadow: inset 0 5px 6px rgba(255, 255, 255, .8), inset 0 -5px 5px rgba(0, 0, 0, .7);
-        box-shadow: inset 0 5px 6px rgba(255, 255, 255, .8), inset 0 -5px 5px rgba(0, 0, 0, .7);
+        box-shadow: inset 0 5px 6px rgba(255, 255, 255, .8), inset 0 -5px 5px rgba(0, 0, 0, .7); */
     }
 
     button {
@@ -420,8 +426,8 @@ button:active {
 @media only screen and (max-width: 768px) and (min-height: 1024px) {
     .start-game.resume {
         /* height: 29px; */
-        margin-top: 5px;
-        margin-bottom: 15px;
+        margin-top: 3px;
+        margin-bottom: 12px;
     }
 }
 
@@ -548,5 +554,20 @@ button:active {
         margin-bottom: 12px;
         height: 17.2vw;
         width: 12vw;
+    }
+
+    .pause-game {
+        /* font-size: 4.5vw; */
+        /* font-weight: 900;
+        border-radius: 50%; */
+        width: 75px;
+        height: 75px;
+        /* margin: 0 auto;
+        margin-bottom: 4px; */
+    }
+    .start-game.resume {
+        height: initial;
+        margin-top: 1px;
+        margin-bottom: 25px;
     }
 }
