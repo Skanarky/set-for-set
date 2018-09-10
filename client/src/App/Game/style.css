@@ -122,10 +122,10 @@ button:active {
     align-items: center;
     border: 1px solid white;
     background-color: rgb(187, 74, 74);
-    height: 18vw;
-    width: 18vw;
+    height: 12vw;
+    width: 12vw;
     border-radius: 15px;
-    font-size: 5vw;
+    font-size: 4vw;
     color: rgb(23, 201, 23);
     text-shadow: 3px 4px 3px rgb(50, 50, 50);
     -webkit-box-shadow: 0px 4px 4px 0 rgb(50, 50, 50), 0px 4px 5px 0 rgb(50, 50, 50);
@@ -172,8 +172,8 @@ button:active {
     font-size: 4vw;
     font-weight: 900;
     border-radius: 50%;
-    width: 35px;
-    height: 27px;
+    width: 31px;
+    height: 24px;
     margin: 0 auto;
     margin-bottom: 4px;
 }
