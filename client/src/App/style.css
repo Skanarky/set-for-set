@@ -186,7 +186,7 @@ button {
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
     .app-wrapper {
-        height: 736px;
+        height: 80vh;
     }
 }
 
