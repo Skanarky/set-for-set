@@ -184,11 +184,12 @@ button {
     }
 }
 
-@media only screen and (min-width: 414px) and (max-height: 736px) and (orientation : portrait) {
+/* safari iOS fix try */
+/* @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation : portrait) {
     .app-wrapper {
         height: 80vh;
     }
-}
+} */
 
 @media only screen and (min-width: 1024px) {
     .app-wrapper {
