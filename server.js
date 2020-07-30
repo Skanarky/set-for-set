@@ -15,7 +15,8 @@ const app = express();
 
 //config
 const port = process.env.PORT;
-const db = process.env.MONGODB_URI;
+// const db = process.env.MONGODB_URI;
+const db = process.env.DB_URI;
 
 //middleware
 app.use(bodyParser.json());
